@@ -1,0 +1,23 @@
+.main-header__button {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.main-header__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  -webkit-box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}

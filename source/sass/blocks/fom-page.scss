@@ -1,0 +1,148 @@
+.main-form {
+  display: block;
+}
+
+.main-form__title {
+  margin: 14px auto 20px;
+  box-sizing: border-box;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: left;
+  color: #111111;
+}
+
+.select-program__title {
+  padding-right: 50px;
+  margin: 25px auto 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main-form__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.select-program {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.selection-form {
+  padding: 0;
+  border: 0;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 0 10px;
+}
+
+.selection-form__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  list-style: none;
+}
+
+.selection-form__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.select-program__field {
+  flex-shrink: 0;
+  margin-bottom: 14px;
+}
+
+.select-program__field-control {
+  flex-grow: 1;
+  width: 50%;
+  height: 45px;
+  margin-left: 15px;
+  padding: 12px 13px;
+  border: 1px solid #e6e6e6;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.program-filter__list {
+  border: 1px solid #ededed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.program-filter__item {
+  min-height: 30px;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.control {
+  padding-left: 45px;
+}
+
+.selection-form__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+  align-self: flex-start;
+}
+
+.selection-form__text-field {
+  margin-bottom: 14px;
+  width: 280px;
+  min-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 1;
+  height: 45px;
+  padding: 12px 13px;
+  border: 1px solid #e6e6e6;
+  text-transform: uppercase;
+}
+
+.program-filter__list-preferences {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+}
+
+.product__button-position {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  font-family: inherit;
+}
+
+.form-about-text {
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 17px;
+  margin-bottom: 14px;
+}

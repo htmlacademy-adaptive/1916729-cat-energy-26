@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@use "./blocks/main-header";
+@use "./blocks/navigation";
+@use "./blocks/global";
+@use "./blocks/header-logo";
+@use "./blocks/header-button";
+@use "./blocks/main-page";
+@use "./blocks/typical-button";
+@use "./blocks/programs-selection";
+@use "./blocks/instructions-page";
+@use "./blocks/example";
+@use "./blocks/comparsion";
+@use "./blocks/invitation";
+@use "./blocks/map";
+@use "./blocks/main-footer";
+@use "./blocks/catalog-main";
+@use "./blocks/fom-page";
+
