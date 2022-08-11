@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи: Функциональное питание для котов</title>
   <link href="./css/style.css" rel="stylesheet">
   <base href="https://htmlacademy-adaptive.github.io/1916729-cat-energy-26/4/">
@@ -15,7 +16,7 @@
         <img src="./img/logo-mobile.svg" width="34" height="38" alt="Картинка с логотипом сайта">
         <img class="main-header__logo-text" src="./img/logo-text.png" width="101" height="18" alt="Название сайта">
       </a>
-      <button class="button main-header__button" type="button" aria-label="Открыть меню">
+      <button class="main-header__button main-header__button" type="button" aria-label="Открыть меню">
       </button>
     </div>
     <nav class="navigation navigation--open">
@@ -35,7 +36,7 @@
   <main class="main-form">
     <h1 class="main-form__title">Подбор программы</h1>
     <div class="main-form__wrapper">
-      <p class="select-program__title">Заполните анкету, и мы подберем
+      <p class="main-form__title-about">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
     </div>
     <form class="select-program" action="https://echo.htmlacademy.ru/" method="POST">
@@ -64,7 +65,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="selection-form progam-filter">
+      <fieldset class="selection-form program-filter">
         <legend class="visually-hidden">Фильтры программы</legend>
         <ul class="selection-form__wrapper program-filter__list">
           <li class="program-filter__item">
@@ -93,8 +94,8 @@
           </li>
         </ul>
       </fieldset>
-      <div class="selection-form__wrapper">
-        <h2 class="selection-form__title">Контактные данные (владельца кота)</h2>
+      <div class="select-program">
+        <h2 class="select-program__title">Контактные данные (владельца кота)</h2>
         <label class="select-program__field">
           <span class="select-program__field-label">E-mail:*</span>
           <input class="select-program__field-control input" type="email" name="select-program-email"
@@ -106,53 +107,56 @@
             placeholder="8 (960) 900-60-90" required>
         </label>
       </div>
-      <fieldset class="selection-form__wrapper">
-        <h2 class="selection-form__title">Комментарий</h2>
-        <textarea class="select-program__text selection-form__text-field"
-          placeholder="Расскажите обо всех повадках кота" cols="30" rows="6" minlength="5"
-          name="select-program-comment"></textarea>
-      </fieldset>
+      <div class="selection-form">
+        <fieldset class="selection-form__wrapper">
+          <h2 class="selection-form__title">Комментарий</h2>
+          <textarea class="select-program__text selection-form__text-field"
+            placeholder="Расскажите обо всех повадках кота" cols="30" rows="6" minlength="5"
+            name="select-program-comment"></textarea>
+        </fieldset>
+      </div>
 
 
-      <fieldset class="selection-form__wrapper">
-        <h2 class="selection-form__title">Дополнительно</h2>
-        <ul class="program-filter__list-preferences">
-          <li class="program-filter__item">
-            <label class="control" for="sweetener">
-              <input class="control-input visually-hidden" type="checkbox" id="sweetener" checked>
-              <span class="control-mark">
-                <span class="control-label">Сахарозаменитель</span>
-              </span>
-            </label>
-          </li>
-          <li class="program-filter__item">
-            <label class="control" for="water">
-              <input class="control-input visually-hidden" type="checkbox" id="water">
-              <span class="control-mark">
-                <span class="control-label">Питьевая вода</span>
-              </span>
-            </label>
-          </li>
-          <li class="program-filter__item">
-            <label class="control" for="milk">
-              <input class="control-input visually-hidden" type="checkbox" id="milk">
-              <span class="control-mark">
-                <span class="control-label">Молоко</span>
-              </span>
-            </label>
-          </li>
-          <li class="program-filter__item">
-            <label class="control" for="vitamin">
-              <input class="control-input visually-hidden" type="checkbox" id="vitamin">
-              <span class="control-mark">
-                <span class="control-label">Витамины</span>
-              </span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <button class="product__button product__button-position" type="submit">Отправить заявку</button>
+      <div class="selection-form">
+        <fieldset class="selection-form__wrapper">
+          <h2 class="selection-form__title">Дополнительно</h2>
+          <ul class="selection-form__list-preferences">
+            <li class="selection-form__filter-item">
+              <label class="control" for="sweetener">
+                <input class="control-input visually-hidden" type="checkbox" id="sweetener" checked>
+                <span class="control-mark">
+                  <span class="control-label">Сахарозаменитель</span>
+                </span>
+              </label>
+            </li>
+            <li class="selection-form__filter-item">
+              <label class="control" for="water">
+                <input class="control-input visually-hidden" type="checkbox" id="water">
+                <span class="control-mark">
+                  <span class="control-label">Питьевая вода</span>
+                </span>
+              </label>
+            </li>
+            <li class="selection-form__filter-item">
+              <label class="control" for="milk">
+                <input class="control-input visually-hidden" type="checkbox" id="milk">
+                <span class="control-mark">
+                  <span class="control-label">Молоко</span>
+                </span>
+              </label>
+            </li>
+            <li class="selection-form__filter-item">
+              <label class="control" for="vitamin">
+                <input class="control-input visually-hidden" type="checkbox" id="vitamin">
+                <span class="control-mark">
+                  <span class="control-label">Витамины</span>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <button class="button select-program__button" type="submit">Отправить заявку</button>
       <span class="form-about-text">* — Обязательные поля</span>
     </form>
     <section class="invitation invitation-text">
@@ -207,7 +211,7 @@
         </ul>
       </div>
       <div class="main-footer__item academy-logo">
-        <a class="copyright-link" href="#"><span class="acadeny-name"> HTML Academy</span></a>
+        <a class="copyright-link" href="#"><span class="academy-name"> HTML Academy</span></a>
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
