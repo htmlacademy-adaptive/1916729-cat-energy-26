@@ -152,6 +152,19 @@ html {
   margin: 0 auto;
 }
 
+.main-content__title {
+  font-size: 36px;
+  line-height: 36px;
+  display: flex;
+  width: 280px;
+  margin: 26px auto;
+}
+
+.main-content__button--down {
+  max-width: 280px;
+  margin: 20px auto 0;
+}
+
 .main-content::before {
   content: "";
   min-height: 305px;
@@ -164,19 +177,6 @@ html {
   right: 0;
   background-color: #5eaa2f;
   z-index: -1;
-}
-
-.main-content__title {
-  font-size: 36px;
-  line-height: 36px;
-  display: flex;
-  width: 280px;
-  margin: 26px auto;
-}
-
-.main-content__button--down {
-  max-width: 280px;
-  margin: 20px auto 0;
 }
 
 .button {
