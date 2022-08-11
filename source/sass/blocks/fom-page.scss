@@ -16,11 +16,15 @@
 }
 
 .select-program__title {
-  padding-right: 50px;
   margin: 25px auto 40px;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
+  padding-right: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+  align-self: flex-start;
 }
 
 .main-form__wrapper {
@@ -35,6 +39,11 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  box-sizing: border-box;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .selection-form {
@@ -58,6 +67,7 @@
   border: 0;
   list-style: none;
 }
+
 
 .selection-form__item {
   padding-left: 20px;
@@ -91,6 +101,10 @@
 
 .program-filter__item {
   min-height: 30px;
+}
+
+.selection-form__filter-item {
+  min-height: 30px;
   align-items: center;
   margin-bottom: 13px;
 }
@@ -123,19 +137,20 @@
   text-transform: uppercase;
 }
 
-.program-filter__list-preferences {
+.selection-form__list-preferences {
   padding: 0;
   margin: 0 auto;
   width: 100%;
   list-style: none;
 }
 
-.product__button-position {
+.select-program__button {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
   font-family: inherit;
+  border: 0;
 }
 
 .form-about-text {

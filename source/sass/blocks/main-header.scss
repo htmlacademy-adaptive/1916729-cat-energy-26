@@ -10,18 +10,38 @@
   margin: 0 auto;
 }
 
-.main-content__title {
-  margin-top: 26px;
-  margin-bottom: 26px;
-  font-size: 36px;
-  line-height: 36px;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+.main-header__logo {
+  text-decoration: none;
+  color: #000000;
 }
 
-.main-content__subtitle {
-  font-family: "Oswald Regular", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
-  min-height: 180px;
+.main-header__logo-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-header__button {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.main-header__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  -webkit-box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
 }

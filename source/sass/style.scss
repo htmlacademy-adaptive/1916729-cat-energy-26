@@ -1,17 +1,19 @@
 @use "./blocks/main-header";
 @use "./blocks/navigation";
 @use "./blocks/global";
-@use "./blocks/header-logo";
-@use "./blocks/header-button";
-@use "./blocks/main-page";
-@use "./blocks/typical-button";
-@use "./blocks/programs-selection";
-@use "./blocks/instructions-page";
+@use "./blocks/main-content";
+@use "./blocks/button";
+@use "./blocks/programs";
+@use "./blocks/instructions";
 @use "./blocks/example";
 @use "./blocks/comparsion";
 @use "./blocks/invitation";
 @use "./blocks/map";
 @use "./blocks/main-footer";
-@use "./blocks/catalog-main";
+@use "./blocks/main-catalog";
 @use "./blocks/fom-page";
+@use "./blocks/stats";
+@use "./blocks/product-card";
+@use "./blocks/additional";
+@use "./blocks/gift";
 

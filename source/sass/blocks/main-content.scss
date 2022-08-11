@@ -1,0 +1,49 @@
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.main-content__image {
+  position: relative;
+  display: block;
+  top: 21px;
+  margin: 0 auto;
+}
+
+
+.main-content::before {
+  content: "";
+  min-height: 305px;
+  position: absolute;
+  background-image: linear-gradient(#5eaa2f60, #5eaa2f40), url("../../img/main-background-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #5eaa2f;
+  z-index: -1;
+}
+
+.main-content__title {
+  font-size: 36px;
+  line-height: 36px;
+  display: flex;
+  width: 280px;
+  margin: 26px auto;
+}
+
+.main-content__button--down {
+  max-width: 280px;
+  margin: 20px auto 0;
+}
+
