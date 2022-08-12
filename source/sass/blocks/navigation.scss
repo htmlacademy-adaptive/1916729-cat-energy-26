@@ -1,0 +1,30 @@
+.navigation__item {
+  border-top: 1px solid #dadada;
+  text-align: center;
+  list-style-type: none;
+}
+
+.navigation__link {
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  min-height: 65px;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333333;
+}
+
+.navigation__list {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  min-height: 200px;
+}
