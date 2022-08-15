@@ -1,0 +1,58 @@
+.selection-form-comment {
+  padding: 0;
+  border: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 0 10px;
+}
+
+.selection-form-comment__line {
+  border-top: 3px solid #68b738;
+  margin-top: 17px;
+  padding-right: 6px;
+}
+
+.selection-form-comment__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  list-style: none;
+}
+
+.selection-form-comment__wrapper--elevated {
+  margin-top: -37px;
+}
+
+.selection-form-comment__title {
+  text-transform: none;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  margin-bottom: 35px;
+  background: #ffffff;
+  width: auto;
+  max-width: 161px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.selection-form-comment__text-field {
+  margin-bottom: 14px;
+  width: 280px;
+  min-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 1;
+  height: 45px;
+  padding: 12px 13px;
+  border: 1px solid #e6e6e6;
+  text-transform: uppercase;
+}
+

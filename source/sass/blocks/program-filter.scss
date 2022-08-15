@@ -1,0 +1,43 @@
+.main-form__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.program-filter {
+  padding: 0;
+  border: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 0 10px;
+}
+
+.program-filter__list {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.program-filter__list--goal {
+  padding: 20px 0 20px 0;
+  border: 1px solid #ededed;
+}
+
+.program-filter__item {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.program-filter__control-label {
+  padding-left: 45px;
+}

@@ -34,6 +34,7 @@
   cursor: pointer;
 }
 
+
 .main-header__button::before {
   content: "";
   position: absolute;
@@ -44,4 +45,27 @@
   background-color: #222222;
   -webkit-box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
   box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}
+
+@media (min-width: 768px) {
+  .main-header__navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 82px;
+    padding-top: 20px;
+    min-width: 768px;
+    margin: 0 auto;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .main-header__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .main-header__button {
+    display: none;
+  }
 }

@@ -13,7 +13,7 @@
 .instructions__title {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
@@ -64,4 +64,59 @@
 
 .instructions__item--icon-time::before {
   background-image: url("../img/icon_alarm.png");
+}
+
+@media (min-width: 768px) {
+  .instructions {
+    margin-bottom: 15px;
+  }
+
+  .instructions__wrapper {
+    width: 768px;
+  }
+
+  .instructions__title {
+    font-size: 60px;
+    margin-bottom: 27px;
+  }
+
+  .instructions__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    counter-reset: advantage-counter;
+  }
+
+  .instructions__item {
+    font-size: 16px;
+    line-height: 24px;
+    width: 324px;
+    min-width: 226px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-left: 0;
+    padding-right: 75px;
+    padding-top: 110px;
+  }
+
+  .instructions__item::after {
+    position: absolute;
+    z-index: -1;
+    content: counter(advantage-counter);
+    counter-increment: advantage-counter;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    top: -40px;
+    left: 115px;
+    height: 223px;
+  }
+
+  .instructions__item::before {
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
 }

@@ -16,7 +16,7 @@
   width: 50%;
   margin: 0;
   text-transform: uppercase;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
@@ -29,4 +29,33 @@
   line-height: 20px;
   color: #444444;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .invitation {
+    padding-top: 65px;
+    padding-bottom: 37px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 768px;
+    background-color: #ffffff;
+  }
+
+  .invitation__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .invitation__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 270px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: right;
+  }
 }

@@ -11,9 +11,15 @@
 @use "./blocks/map";
 @use "./blocks/main-footer";
 @use "./blocks/main-catalog";
-@use "./blocks/fom-page";
+@use "./blocks/main-form";
 @use "./blocks/stats";
 @use "./blocks/product-card";
 @use "./blocks/additional";
 @use "./blocks/gift";
+@use "./blocks/select-program-owner";
+@use "./blocks/selection-form";
+@use "./blocks/program-filter";
+@use "./blocks/selection-form-comment";
+@use "./blocks/selection-form-optional";
+@use "./blocks/variables";
 

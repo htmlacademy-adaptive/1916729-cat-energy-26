@@ -68,3 +68,35 @@
   text-decoration: none;
   color: #444444;
 }
+
+@media (min-width: 768px) {
+  .main-footer__wrapper {
+    box-sizing: border-box;
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .main-footer__item {
+    justify-content: center;
+    width: 224px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .main-footer__item:not(:last-child) {
+    border: 0;
+  }
+
+  .main-footer__item--logo {
+    text-align: left;
+  }
+
+  .academy-logo {
+    justify-content: space-between;
+  }
+}

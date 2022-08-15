@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   outline: 0;
   border: 0;
@@ -39,4 +39,120 @@
   border-radius: 6px 6px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
+}
+
+.comparsion__rigth {
+  display: none;
+}
+
+.comparsion__input-toggle {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .stats__comparsion {
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .comparsion__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 235px;
+    min-height: 462px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 768px;
+  }
+
+  .comparsion__rigth {
+    display: block;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -170px;
+    min-height: 517px;
+  }
+
+  .comparsion__top {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -170px;
+    min-height: 517px;
+  }
+
+  .comparsion-photo {
+    position: absolute;
+    width: 690px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13px;
+  }
+
+  .comparsion__top-photo--before {
+    left: 3px;
+    top: 17px;
+  }
+
+  .comparsion__rigth-photo--after {
+    top: -12px;
+    right: -20px;
+  }
+
+  .comparsion__controls {
+    margin-top: 15px;
+    margin-bottom: 68px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .comparsion__button {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
+    font-size: 20px;
+  }
+
+  .comparsion__input {
+    width: 428px;
+    height: 6px;
+    margin-left: 22px;
+    margin-right: 22px;
+    border-radius: 2.5px 2.5px;
+    border: 0;
+    background: #dcdcdc;
+  }
+
+  .comparsion__input-switch {
+    display: none;
+  }
+
+  .comparsion__input-toggle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+    top: 2px;
+    left: 214px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .comparsion__input-toggle::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #68b738;
+    top: 50%;
+    left: 16px;
+    margin-top: -4px;
+    margin-left: -4px;
+  }
 }
