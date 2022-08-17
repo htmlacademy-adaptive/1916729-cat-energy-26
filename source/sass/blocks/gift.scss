@@ -36,3 +36,16 @@
   text-align: center;
   padding-top: 90px;
 }
+
+@media (min-width: 768px) {
+  .gift {
+    background-image: url("../../img/catalog-bgimage-tablet.jpg");
+    background-size: 707px;
+    object-fit: contain;
+    min-height: 200px;
+    padding: 0;
+    padding-left: 422px;
+    padding-right: 120px;
+    width: 707px;
+  }
+}

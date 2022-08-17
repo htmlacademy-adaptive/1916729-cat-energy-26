@@ -56,3 +56,36 @@
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .selection-form-comment {
+    margin-top: 49px;
+  }
+
+  .selection-form-comment__wrapper {
+    width: 768px;
+  }
+
+  .selection-form-comment__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 50px;
+    min-width: 221px;
+  }
+
+  .selection-form-comment__wrapper--elevated {
+    margin-top: -55px;
+  }
+
+  .selection-form-comment__text-field {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Oswald", "Arial", sans-serif;
+    min-height: 174px;
+    width: 630px;
+    margin-bottom: 74px;
+    margin-top: 28px;
+  }
+}
+

@@ -61,3 +61,41 @@
   text-transform: uppercase;
   font-family: inherit;
 }
+
+@media (min-width: 768px) {
+  .select-program-owner {
+    margin-top: 115px;
+  }
+
+  .select-program-owner__wrapper {
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 41px;
+    width: 768px;
+  }
+
+  .select-program-owner__title {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 594px;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 27px;
+    margin-bottom: 77px;
+  }
+
+  .select-program-owner__field {
+    padding-left: 72px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+  }
+
+  .select-program-owner__field-control {
+    height: 52px;
+    padding: 14px 20px 13px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

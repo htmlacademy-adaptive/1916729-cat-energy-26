@@ -61,6 +61,37 @@
   border-bottom: 1px solid #cdcdcd;
 }
 
-.additional__table tr:nth-child(4) {
-  border-bottom: 1px solid #cdcdcd;
+
+@media (min-width: 768px) {
+  .additional {
+    margin: 0 auto;
+    min-width: 768px;
+  }
+
+  .additional__table {
+    min-width: 638px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+    border-top: 0;
+  }
+
+  .additional__title {
+    font-weight: 400;
+    width: auto;
+    margin: 68px 0 80px 67px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 38px;
+  }
+
+  .additional__list {
+    border: 1px solid #cdcdcd;
+    border-bottom: 0;
+  }
+
+  .additional__table tr:not(:first-child) {
+    border-top: 1px solid #cdcdcd;
+  }
 }
+

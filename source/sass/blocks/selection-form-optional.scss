@@ -67,3 +67,59 @@
   padding-bottom: 6px;
 }
 
+@media (min-width: 768px) {
+  .selection-form-optional__wrapper {
+    width: 768px;
+  }
+
+  .selection-form-optional__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 15px;
+    margin-left: 31px;
+  }
+
+  .selection-form-optional__list-preferences {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 21px;
+  }
+
+  .selection-form-optional__filter-item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 284px;
+    margin-bottom: 32px;
+    min-height: 40px;
+  }
+
+  .selection-form-optional__button {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .main-form__button {
+    margin-left: 76px;
+    padding: 13px 45px;
+    font-size: 20px;
+  }
+
+  .main-form__about-text {
+    padding-right: 128px;
+    flex-grow: 1;
+    align-self: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
