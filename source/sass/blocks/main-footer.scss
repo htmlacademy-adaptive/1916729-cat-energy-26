@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -57,7 +59,7 @@
   margin-right: auto;
   justify-content: space-between;
   text-decoration: none;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
@@ -69,7 +71,7 @@
   color: #444444;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-footer__wrapper {
     box-sizing: border-box;
     width: 768px;
@@ -98,5 +100,21 @@
 
   .academy-logo {
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    display: grid;
+    grid-template-areas: "map" "invitation";
+  }
+
+  .main-footer__wrapper {
+    width: 1300px;
+  }
+
+  .main-footer__item {
+    width: 244px;
+    margin: 0;
   }
 }

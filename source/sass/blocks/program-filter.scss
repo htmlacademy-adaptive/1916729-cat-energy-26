@@ -1,7 +1,9 @@
+@use "../abstract" as *;
+
 .program-filter {
   padding: 0;
   border: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -34,7 +36,7 @@
   padding-left: 45px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .program-filter {
     border: 0;
     margin-bottom: 52px;
@@ -56,5 +58,22 @@
   .program-filter__item {
     padding-left: 28px;
     min-height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-filter {
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 46px;
+    margin-top: 0;
+  }
+
+  .program-filter__list--goal {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0;
+    width: 100%;
   }
 }

@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .programs {
   display: flex;
   flex-direction: column;
@@ -67,7 +69,7 @@
 .programs__text {
   margin-bottom: 22px;
   text-align: left;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -97,7 +99,7 @@
   top: 25px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .programs {
     width: 708px;
     padding-left: 30px;
@@ -152,5 +154,66 @@
     left: auto;
     right: 28px;
     top: 135px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .programs__item {
+    width: 570px;
+    min-height: 370px;
+  }
+
+  .programs__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programs__item--weight-loss::after {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 66px;
+  }
+
+  .programs__title {
+    margin-bottom: 75px;
+    padding-left: 163px;
+  }
+
+  .programs__text {
+    margin-bottom: 20px;
+    min-width: 466px;
+  }
+
+  .programs__link {
+    padding-top: 9px;
+    align-self: flex-start;
+    border: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programs__link::after {
+    top: 19px;
+    left: 127px;
+  }
+
+  .programs__item--weight-gain::after {
+    width: 134px;
+    height: 56px;
+    top: 69px;
+    left: 34px;
   }
 }

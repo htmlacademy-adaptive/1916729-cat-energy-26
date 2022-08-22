@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .gift {
   position: relative;
   display: flex;
@@ -28,7 +30,7 @@
 .gift__text {
   display: block;
   margin-top: auto;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -37,7 +39,7 @@
   padding-top: 90px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .gift {
     background-image: url("../../img/catalog-bgimage-tablet.jpg");
     background-size: 707px;
@@ -47,5 +49,15 @@
     padding-left: 422px;
     padding-right: 120px;
     width: 707px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    height: 289px;
+    margin: 0 0 0 79px;
+    background-size: cover;
+    padding: 42px;
   }
 }

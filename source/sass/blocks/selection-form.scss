@@ -1,7 +1,9 @@
+@use "../abstract" as *;
+
 .selection-form {
   padding: 0;
   border: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -39,7 +41,7 @@
   width: 50%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .selection-form {
     padding-left: 30px;
     padding-right: 30px;
@@ -72,5 +74,30 @@
     height: 52px;
     padding: 14px 20px 13px;
     margin-left: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-form-container {
+    box-sizing: border-box;
+    width: 1300px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-height: 196px;
+  }
+
+  .selection-form {
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 46px;
+  }
+
+  .selection-form__wrapper {
+    margin: 0;
+    width: 100%;
   }
 }

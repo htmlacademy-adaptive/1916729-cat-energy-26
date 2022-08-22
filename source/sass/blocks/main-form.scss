@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .main-form {
   display: block;
 }
@@ -16,7 +18,7 @@
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
@@ -41,7 +43,7 @@
   margin-bottom: 14px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-form__title {
     font-size: 60px;
     font-weight: 400;
@@ -69,5 +71,24 @@
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__title {
+    margin-top: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1300px;
+  }
+
+  .main-form__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1300px;
+  }
+
+  .main-form__title-about {
+    margin-left: 0;
   }
 }

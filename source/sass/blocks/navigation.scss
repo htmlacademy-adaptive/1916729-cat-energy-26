@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .navigation__item {
   border-top: 1px solid #dadada;
   text-align: center;
@@ -5,7 +7,7 @@
 }
 
 .navigation__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-weight: 700;
   display: block;
   box-sizing: border-box;
@@ -30,7 +32,7 @@
   min-height: 200px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .navigation__list {
     display: flex;
     flex-direction: row;
@@ -42,7 +44,7 @@
   }
 
   .navigation__link {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $oswald;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;

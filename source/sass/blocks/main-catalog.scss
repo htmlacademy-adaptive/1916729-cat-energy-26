@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .main-catalog {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,7 @@
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
@@ -52,7 +54,7 @@
 }
 
 .main-catalog__title-product {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -62,7 +64,7 @@
 }
 
 .main-catalog__properties {
-  width: 50%;
+  width: 66%;
   margin-top: 20px;
 }
 
@@ -84,7 +86,7 @@
   width: 50%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-catalog__title {
     font-size: 60px;
     font-weight: 400;
@@ -99,7 +101,7 @@
   .main-catalog__list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-self: center;
     border: 0;
     width: 768px;
@@ -111,19 +113,17 @@
     align-items: center;
     min-height: 431px;
     width: 324px;
-    background-color: #f2f2f2;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 40px;
     border: 0;
-    margin: 140px 20px 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    background-color: #f2f2f2;
   }
 
   .main-catalog__properties {
     width: 250px;
-    font-family: "Arial", sans-serif;
+    font-family: $arial;
     margin-left: auto;
     margin-right: auto;
     margin-top: 33px;
@@ -163,5 +163,41 @@
     margin-top: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__title {
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 62px;
+  }
+
+  .main-catalog__list {
+    width: 1300px;
+    margin-bottom: 72px;
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-content: space-between;
+  }
+
+  .main-catalog__product-card {
+    width: 245px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-catalog__title-product {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-catalog__properties {
+    width: 170px;
+  }
+
+  .main-catalog__button {
+    width: 170px;
   }
 }

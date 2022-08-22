@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .comparsion__wrapper {
   box-sizing: border-box;
   width: 320px;
@@ -23,7 +25,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
   outline: 0;
   border: 0;
@@ -49,7 +51,7 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .stats__comparsion {
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
@@ -98,8 +100,7 @@
   }
 
   .comparsion-photo--after {
-    top: -12px;
-    right: -20px;
+    right: 0;
   }
 
   .comparsion__controls {
@@ -154,5 +155,21 @@
     left: 16px;
     margin-top: -4px;
     margin-left: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparsion__wrapper {
+    width: 690px;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .comparsion__controls {
+    margin-left: 37px;
+    margin-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
