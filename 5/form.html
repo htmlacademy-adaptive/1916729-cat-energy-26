@@ -42,56 +42,64 @@
         программу питания для вашего кота</p>
     </div>
     <form class="select-program" action="https://echo.htmlacademy.ru/" method="POST">
-      <fieldset class="selection-form">
-        <ul class="selection-form__wrapper">
-          <li class="selection-form__item">
-            <label class="selection-form__field">ИМЯ:* </label>
-            <input class="selection-form__field-control input" type="text" name="select-program-name"
-              placeholder="Барсик" required>
-          </li>
-          <li class="selection-form__item">
-            <label class="selection-form__field">Вес (кг):*</label>
-            <input class="selection-form__field-control input" type="number" name="select-program-weight"
-              placeholder="7" required>
-          </li>
-          <li class="selection-form__item">
-            <label class="selection-form__field">Возраст (лет):</label>
-            <input class="selection-form__field-control input" type="number" name="select-program-age" placeholder="7">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="program-filter">
-        <legend class="visually-hidden">Фильтры программы</legend>
-        <ul class="program-filter__list program-filter__list--goal">
-          <li class="program-filter__item">
-            <label class="program-filter__control">
-              <input class="program-filter__control-input visually-hidden" type="radio" name="diet-program"
-                value="weight-loss" checked>
-              <span class="program-filter__control-label">ПОХУДЕНИЕ</span>
-            </label>
-          </li>
-          <li class="program-filter__item">
-            <label class="program-filter__control">
-              <input class="program-filter__control-input visually-hidden" type="radio" name="diet-program"
-                value="weight-gain">
-              <span class="program-filter__control-label">НАБОР МАССЫ</span>
-            </label>
-          </li>
-          <li class="program-filter__item">
-            <label class="program-filter__control">
-              <input class="program-filter__control-input visually-hidden" type="radio" name="diet-program"
-                value="dont-now">
-              <span class="program-filter__control-label">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="selection-form-container">
+        <fieldset class="selection-form">
+          <ul class="selection-form__wrapper">
+            <li class="selection-form__item">
+              <label class="selection-form__field">ИМЯ:* </label>
+              <input class="selection-form__field-control input" type="text" name="select-program-name"
+                placeholder="Барсик" required>
+            </li>
+            <li class="selection-form__item">
+              <label class="selection-form__field">Вес (кг):*</label>
+              <input class="selection-form__field-control input" type="number" name="select-program-weight"
+                placeholder="7" required>
+            </li>
+            <li class="selection-form__item">
+              <label class="selection-form__field">Возраст (лет):</label>
+              <input class="selection-form__field-control input" type="number" name="select-program-age"
+                placeholder="7">
+            </li>
+          </ul>
+
+        </fieldset>
+
+        <fieldset class="program-filter">
+          <legend class="visually-hidden">Фильтры программы</legend>
+          <ul class="program-filter__list program-filter__list--goal">
+            <li class="program-filter__item">
+              <label class="program-filter__control">
+                <input class="program-filter__control-input visually-hidden" type="radio" name="diet-program"
+                  value="weight-loss" checked>
+                <span class="program-filter__control-label">ПОХУДЕНИЕ</span>
+              </label>
+            </li>
+            <li class="program-filter__item">
+              <label class="program-filter__control">
+                <input class="program-filter__control-input visually-hidden" type="radio" name="diet-program"
+                  value="weight-gain">
+                <span class="program-filter__control-label">НАБОР МАССЫ</span>
+              </label>
+            </li>
+            <li class="program-filter__item">
+              <label class="program-filter__control">
+                <input class="program-filter__control-input visually-hidden" type="radio" name="diet-program"
+                  value="dont-now">
+                <span class="program-filter__control-label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+
+      </div>
+
 
       <div class="select-program-owner">
-        <div class="select-program-owner-line"></div>
+        <h2 class="select-program-owner__title select-program-owner__title--elevated">Контактные данные (владельца
+          кота)</h2>
         <fieldset class="select-program-owner__wrapper">
-          <h2 class="select-program-owner__title select-program-owner__title--elevated">Контактные данные (владельца
-            кота)</h2>
+
           <label class="select-program-owner__field">
             <span class="select-program-owner__field-label">E-mail:*</span>
             <input class="select-program-owner__field-control input" type="email" name="select-program-email"
@@ -106,9 +114,8 @@
       </div>
 
       <div class="selection-form-comment">
-        <div class="selection-form-comment__line"></div>
+        <h2 class="selection-form-comment__title">Комментарий</h2>
         <fieldset class="selection-form-comment__wrapper selection-form-comment__wrapper--elevated">
-          <h2 class="selection-form-comment__title">Комментарий</h2>
           <textarea class="selection-form-comment__text-field" placeholder="Расскажите обо всех повадках кота" cols="30"
             rows="6" minlength="5" name="select-program-comment"></textarea>
         </fieldset>
@@ -116,9 +123,8 @@
 
 
       <div class="selection-form-optional">
-        <div class="selection-form-optional__line"></div>
+        <h2 class="selection-form-optional__title">Дополнительно</h2>
         <fieldset class="selection-form-optional__wrapper selection-form-optional__wrapper--elevated">
-          <h2 class="selection-form-optional__title">Дополнительно</h2>
           <ul class="selection-form-optional__list-preferences">
             <li class="selection-form-optional__filter-item">
               <label class="selection-form-optional__control" for="sweetener">Сахарозаменитель</label>
@@ -145,7 +151,8 @@
         </div>
       </div>
     </form>
-
+  </main>
+  <footer class="main-footer">
     <section class="invitation invitation-text">
       <h2 class="invitation__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
       <p class="invitation__text">ул. Большая Конюшенная, д.19/8<br> Санкт-Петербург</p>
@@ -157,8 +164,6 @@
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
-  </main>
-  <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__item main-footer__item--logo">
         <img class="footer-logo" src="./img/footer-logo.svg" width="128" height="24" alt="Логотип">
