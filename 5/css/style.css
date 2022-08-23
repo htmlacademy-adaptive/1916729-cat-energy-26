@@ -3,6 +3,7 @@ body {
   font-weight: normal;
   position: relative;
   margin: 0;
+  min-width: 320px;
 }
 
 html {
@@ -117,7 +118,7 @@ html {
 }
 @media (min-width: 1280px) {
   .main-header__navigation {
-    width: 1300px;
+    width: 1280px;
     justify-content: space-between;
     padding-top: 50px;
     padding-left: 0;
@@ -293,7 +294,7 @@ html {
     padding-top: 62px;
     padding-left: 120px;
     padding-right: 80px;
-    width: 1300px;
+    width: 1280px;
     background-size: 552px;
   }
 
@@ -471,7 +472,7 @@ html {
 }
 @media (min-width: 1280px) {
   .programs {
-    width: 1300px;
+    width: 1280px;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -653,7 +654,7 @@ html {
 }
 @media (min-width: 1280px) {
   .instructions__wrapper {
-    width: 1300px;
+    width: 1280px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -668,7 +669,6 @@ html {
     padding-right: 0;
     margin-right: 40px;
     padding-top: 112px;
-    margin-left: 40px;
     min-height: 226px;
   }
 
@@ -1137,7 +1137,7 @@ html {
   }
 
   .main-footer__wrapper {
-    width: 1300px;
+    width: 1280px;
   }
 
   .main-footer__item {
@@ -1150,10 +1150,13 @@ html {
   flex-direction: column;
 }
 
+.main-ctalog__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-catalog__title {
   margin: 14px auto 20px;
-  box-sizing: border-box;
-  width: 320px;
   padding-left: 20px;
   padding-right: 20px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -1164,8 +1167,6 @@ html {
 }
 
 .main-catalog__list {
-  box-sizing: border-box;
-  width: 320px;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -1211,6 +1212,7 @@ html {
 .main-catalog__properties {
   width: 66%;
   margin-top: 20px;
+  flex-grow: 1;
 }
 
 .main-catalog__properties dt {
@@ -1232,6 +1234,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .main-ctalog__container {
+    width: 768px;
+  }
+
   .main-catalog__title {
     font-size: 60px;
     font-weight: 400;
@@ -1240,7 +1246,6 @@ html {
     margin-bottom: 25px;
     padding-left: 30px;
     padding-right: 30px;
-    width: 768px;
   }
 
   .main-catalog__list {
@@ -1249,7 +1254,6 @@ html {
     justify-content: space-around;
     align-self: center;
     border: 0;
-    width: 768px;
   }
 
   .main-catalog__product-card {
@@ -1311,15 +1315,17 @@ html {
   }
 }
 @media (min-width: 1280px) {
+  .main-ctalog__container {
+    width: 1280px;
+  }
+
   .main-catalog__title {
-    width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 62px;
   }
 
   .main-catalog__list {
-    width: 1300px;
     margin-bottom: 72px;
     padding-right: 40px;
     padding-left: 40px;
@@ -1423,13 +1429,13 @@ html {
     margin-top: 62px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 1300px;
+    width: 1280px;
   }
 
   .main-form__wrapper {
     padding-left: 40px;
     padding-right: 40px;
-    width: 1300px;
+    width: 1280px;
   }
 
   .main-form__title-about {
@@ -1550,7 +1556,7 @@ html {
   }
 
   .stats__title {
-    width: 1300px;
+    width: 1280px;
     margin-top: 0;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -1712,7 +1718,7 @@ html {
   width: 100%;
   height: 2px;
   position: absolute;
-  top: 40px;
+  top: 15px;
   border-top: 2px solid #68b738;
   z-index: 0;
 }
@@ -1802,7 +1808,7 @@ html {
   }
 
   .additional::before {
-    top: 47px;
+    top: 21px;
   }
 
   .additional__table {
@@ -1824,16 +1830,16 @@ html {
 }
 @media (min-width: 1280px) {
   .additional__title {
-    padding-left: 30px;
+    padding-left: 40px;
     margin-left: calc((100% - 1280px) / 2);
   }
 
   .additional__container {
     flex-direction: row;
     margin-bottom: 87px;
-    width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
+    width: 1280px;
   }
 
   .additional__list {
@@ -1947,18 +1953,36 @@ html {
     object-fit: contain;
     min-height: 200px;
     padding: 0;
+    margin: 69px auto;
     padding-left: 422px;
     padding-right: 120px;
     width: 707px;
+  }
+
+  .gift::before {
+    transform: translateX(-260px) translateY(-4px);
+  }
+
+  .gift__text {
+    margin-top: 0;
+    padding-top: 71px;
   }
 }
 @media (min-width: 1280px) {
   .gift {
     width: 245px;
     height: 289px;
-    margin: 0 0 0 79px;
+    margin: 0 0 0 56px;
     background-size: cover;
     padding: 42px;
+  }
+
+  .gift::before {
+    transform: translateX(-38px) translateY(-4px);
+  }
+
+  .gift__text {
+    margin-top: auto;
   }
 }
 .select-program-owner {
@@ -2071,12 +2095,12 @@ html {
 @media (min-width: 1280px) {
   .select-program-owner__title {
     padding-left: 40px;
-    margin-left: calc((100% - 1300px) / 2);
+    margin-left: calc((100% - 1280px) / 2);
     position: relative;
   }
 
   .select-program-owner__wrapper {
-    width: 1300px;
+    width: 1280px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2169,7 +2193,7 @@ html {
 @media (min-width: 1280px) {
   .selection-form-container {
     box-sizing: border-box;
-    width: 1300px;
+    width: 1280px;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -2356,7 +2380,7 @@ html {
 }
 @media (min-width: 1280px) {
   .selection-form-comment__wrapper {
-    width: 1300px;
+    width: 1280px;
     margin-top: 69px;
     padding-left: 40px;
     padding-right: 40px;
@@ -2364,7 +2388,7 @@ html {
 
   .selection-form-comment__title {
     padding-left: 40px;
-    margin-left: calc((100% - 1300px) / 2);
+    margin-left: calc((100% - 1280px) / 2);
     width: 259px;
   }
 }
@@ -2511,14 +2535,14 @@ html {
     width: 292px;
     position: relative;
     padding-left: 40px;
-    margin-left: calc((100% - 1300px) / 2);
+    margin-left: calc((100% - 1280px) / 2);
     background: #ffffff;
   }
 
   .selection-form-optional__list-preferences {
     padding: 0;
     justify-content: flex-start;
-    width: 1300px;
+    width: 1280px;
   }
 
   .selection-form-optional__filter-item {
@@ -2533,7 +2557,7 @@ html {
   .selection-form-optional__button {
     margin-top: 61px;
     margin-bottom: 82px;
-    width: 1300px;
+    width: 1280px;
     padding-left: 40px;
     padding-right: 40px;
   }
