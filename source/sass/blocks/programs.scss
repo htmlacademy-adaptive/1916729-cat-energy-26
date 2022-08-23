@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .programs {
   display: flex;
   flex-direction: column;
@@ -67,7 +69,7 @@
 .programs__text {
   margin-bottom: 22px;
   text-align: left;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -95,4 +97,123 @@
   background-position: left center;
   right: 110px;
   top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 45px;
+  }
+
+  .programs__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 56px 275px 56px 55px;
+  }
+
+  .programs__item::before {
+    width: 200px;
+    height: 200px;
+    right: 62px;
+    left: auto;
+    top: 92px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    margin-left: 0;
+  }
+
+  .programs__text {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .programs__item--weight-loss::after {
+    width: 140px;
+    height: 194px;
+    left: auto;
+    right: 92px;
+    top: 80px;
+  }
+
+  .programs__item--weight-gain::after {
+    width: 268px;
+    height: 112px;
+    left: auto;
+    right: 28px;
+    top: 135px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1280px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .programs__item {
+    width: 570px;
+    min-height: 370px;
+  }
+
+  .programs__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programs__item--weight-loss::after {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 66px;
+  }
+
+  .programs__title {
+    margin-bottom: 75px;
+    padding-left: 163px;
+  }
+
+  .programs__text {
+    margin-bottom: 20px;
+    min-width: 466px;
+  }
+
+  .programs__link {
+    padding-top: 9px;
+    align-self: flex-start;
+    border: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programs__link::after {
+    top: 19px;
+    left: 127px;
+  }
+
+  .programs__item--weight-gain::after {
+    width: 134px;
+    height: 56px;
+    top: 69px;
+    left: 34px;
+  }
 }

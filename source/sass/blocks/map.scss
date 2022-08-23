@@ -1,5 +1,13 @@
+@use "../abstract" as *;
+
 .page-map,
 .page-map iframe {
   width: 100%;
   height: 362px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-map {
+    grid-area: map;
+  }
 }

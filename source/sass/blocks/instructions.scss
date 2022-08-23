@@ -1,11 +1,13 @@
+@use "../abstract" as *;
+
 .instructions {
   margin-bottom: 30px;
 }
 
 .instructions__wrapper {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   box-sizing: border-box;
   width: 320px;
 }
@@ -13,7 +15,7 @@
 .instructions__title {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
@@ -30,7 +32,7 @@
 .instructions__item {
   position: relative;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   padding-left: 80px;
@@ -64,4 +66,89 @@
 
 .instructions__item--icon-time::before {
   background-image: url("../img/icon_alarm.png");
+}
+
+@media (min-width: $tablet-width) {
+  .instructions {
+    margin-bottom: 15px;
+  }
+
+  .instructions__wrapper {
+    width: 768px;
+  }
+
+  .instructions__title {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 27px;
+  }
+
+  .instructions__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    counter-reset: advantage-counter;
+  }
+
+  .instructions__item {
+    font-size: 16px;
+    line-height: 24px;
+    width: 324px;
+    min-width: 226px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-left: 0;
+    padding-right: 75px;
+    padding-top: 110px;
+  }
+
+  .instructions__item::after {
+    position: absolute;
+    z-index: -1;
+    content: counter(advantage-counter);
+    counter-increment: advantage-counter;
+    font-family: $oswald;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    top: -40px;
+    left: 115px;
+    height: 223px;
+  }
+
+  .instructions__item::before {
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instructions__wrapper {
+    width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .instructions__list {
+    justify-content: flex-start;
+  }
+
+  .instructions__item {
+    width: 245px;
+    margin-bottom: 0;
+    padding-right: 0;
+    margin-right: 40px;
+    padding-top: 112px;
+    min-height: 226px;
+  }
+
+  .instructions__item:first-child {
+    margin-left: 0;
+  }
+
+  .instructions__item:last-child {
+    margin-right: 0;
+  }
 }

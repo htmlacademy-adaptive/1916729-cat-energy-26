@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -57,7 +59,7 @@
   margin-right: auto;
   justify-content: space-between;
   text-decoration: none;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
@@ -67,4 +69,52 @@
   margin-top: 10px;
   text-decoration: none;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    box-sizing: border-box;
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .main-footer__item {
+    justify-content: center;
+    width: 224px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .main-footer__item:not(:last-child) {
+    border: 0;
+  }
+
+  .main-footer__item--logo {
+    text-align: left;
+  }
+
+  .academy-logo {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    display: grid;
+    grid-template-areas: "map" "invitation";
+  }
+
+  .main-footer__wrapper {
+    width: 1280px;
+  }
+
+  .main-footer__item {
+    width: 244px;
+    margin: 0;
+  }
 }

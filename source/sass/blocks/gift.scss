@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .gift {
   position: relative;
   display: flex;
@@ -28,11 +30,52 @@
 .gift__text {
   display: block;
   margin-top: auto;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
   padding-top: 90px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    background-image: url("../../img/catalog-bgimage-tablet.jpg");
+    background-size: 707px;
+    object-fit: contain;
+    min-height: 200px;
+    padding: 0;
+    margin: 69px auto;
+    padding-left: 422px;
+    padding-right: 120px;
+    width: 707px;
+  }
+
+  .gift::before {
+    transform: translateX(-260px) translateY(-4px);
+  }
+
+  .gift__text {
+    margin-top: 0;
+    padding-top: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    height: 289px;
+    margin: 0 0 0 56px;
+    background-size: cover;
+    padding: 42px;
+  }
+
+  .gift::before {
+    transform: translateX(-38px) translateY(-4px);
+  }
+
+  .gift__text {
+    margin-top: auto;
+  }
 }
