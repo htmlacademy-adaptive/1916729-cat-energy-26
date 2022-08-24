@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 
-.main-header__logo {
+.main-header__logo img {
   text-decoration: none;
   color: #000000;
 }
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-.main-header__button::before {
+.main-header__navigation--closed .main-header__button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -45,16 +45,17 @@
   box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
 }
 
-.main-header__button:active::before {
-  background-color: rgba(205, 214, 219 0.3);
+.main-header__navigation--closed .main-header__button:active::before {
+  background-color: #575757;
+  opacity: 0.3;
+  box-shadow: 0 8px 0 0 #575757, 0 16px 0 0 #575757;
 }
 
-.main-header__button--open {
+.main-header__navigation--open .main-header__button--open {
   top: 8px;
   position: absolute;
   right: 39px;
   left: auto;
-
 
   &::before,
   &::after {
@@ -63,12 +64,12 @@
     top: 24px;
     left: 18px;
     width: 25px;
-    height: 5px;
+    height: 2px;
     background-color: #222222;
   }
 
   &::before {
-    transform: rotate(90deg);
+    transform: rotate(45deg);
     box-shadow: none;
   }
 
@@ -79,9 +80,55 @@
 
   &:active::before,
   &:active::after {
-    background-color: rgba(205, 214, 219 0.3);
+    background-color: rgba(1, 1, 1, 0.3);
+    box-shadow: none;
   }
 }
+
+.main-header__navigation--closed .navigation {
+  display: none;
+}
+
+.main-header__navigation--open .navigation {
+  top: 0;
+}
+
+
+
+// .main-header__button--open {
+//   top: 8px;
+//   position: absolute;
+//   right: 39px;
+//   left: auto;
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 24px;
+//     left: 18px;
+//     width: 25px;
+//     height: 2px;
+//     background-color: #222222;
+//   }
+
+//   &::before {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+
+//   &::after {
+//     transform: rotate(-45deg);
+//     box-shadow: none;
+//   }
+
+//   &:active::before,
+//   &:active::after {
+//     background-color: rgba(1, 1, 1, 0.3);
+//     box-shadow: none;
+//   }
+// }
+
 
 @media (min-width: $tablet-width) {
   .main-header__navigation {
