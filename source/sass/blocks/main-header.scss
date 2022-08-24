@@ -31,11 +31,8 @@
   border: none;
   appearance: none;
   background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
 }
-
 
 .main-header__button::before {
   content: "";
@@ -45,8 +42,45 @@
   width: 24px;
   height: 2px;
   background-color: #222222;
-  -webkit-box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
   box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}
+
+.main-header__button:active::before {
+  background-color: rgba(205, 214, 219 0.3);
+}
+
+.main-header__button--open {
+  top: 8px;
+  position: absolute;
+  right: 39px;
+  left: auto;
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 25px;
+    height: 5px;
+    background-color: #222222;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(205, 214, 219 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
