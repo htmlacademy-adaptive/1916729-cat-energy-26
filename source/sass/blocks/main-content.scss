@@ -5,10 +5,7 @@
   display: flex;
   flex-direction: column;
   min-height: 480px;
-  margin: 0 auto;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
   color: #ffffff;
   text-align: center;
   margin-bottom: 22px;
@@ -59,7 +56,6 @@
     background-repeat: no-repeat;
     text-align: left;
     color: #111111;
-    width: 768px;
     min-height: 855px;
   }
 
@@ -73,7 +69,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 43px;
+    margin-top: 62px;
     margin-bottom: 38px;
     width: 100%;
   }
@@ -103,7 +99,6 @@
     padding-top: 62px;
     padding-left: 120px;
     padding-right: 80px;
-    width: 1280px;
     background-size: 552px;
   }
 

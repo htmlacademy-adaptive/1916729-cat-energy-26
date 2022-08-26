@@ -2,6 +2,7 @@
 @use "my-vars";
 @use "fonts";
 //Стили для  БЭМ блоков
+@use "./blocks/container";
 @use "./blocks/main-header";
 @use "./blocks/navigation";
 @use "./blocks/main-content";
@@ -24,3 +25,4 @@
 @use "./blocks/program-filter";
 @use "./blocks/selection-form-comment";
 @use "./blocks/selection-form-optional";
+

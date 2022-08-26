@@ -2,10 +2,8 @@
 
 .comparsion__wrapper {
   box-sizing: border-box;
-  width: 320px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .comparsion__controls {
@@ -13,8 +11,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 35px;
   text-transform: uppercase;
   font-size: 16px;
@@ -43,6 +39,11 @@
   border: 1px solid #cdcdcd;
 }
 
+.comparsion-photo {
+  display: block;
+  margin: 0 auto;
+}
+
 .comparsion__rigth {
   display: none;
 }
@@ -52,10 +53,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .stats__comparsion {
-    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
-  }
-
   .comparsion__wrapper {
     flex-direction: row;
     flex-wrap: wrap;

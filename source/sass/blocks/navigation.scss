@@ -1,8 +1,8 @@
 @use "../abstract" as *;
 
 .navigation {
-  top: -100px;
-  transition: 0.3s;
+  position: relative;
+  flex-grow: 1;
 }
 
 .navigation__item {
@@ -41,10 +41,12 @@
   .navigation__list {
     display: flex;
     flex-direction: row;
-    min-height: 76px;
-    width: 535px;
+    min-height: 52px;
+    width: 440px;
     justify-content: flex-end;
     flex-wrap: wrap;
+    margin-right: 0;
+    padding: 0;
     align-content: flex-start;
   }
 
@@ -52,13 +54,16 @@
     font-family: $oswald;
     font-weight: 400;
     font-size: 18px;
-    line-height: 25px;
-    min-height: 20px;
+    line-height: 24px;
     padding-bottom: 7px;
+    min-height: 36px;
   }
 
   .navigation__item {
     border: 0;
+  }
+
+  .navigation__item:not(:first-child) {
     padding-left: 35px;
   }
 }

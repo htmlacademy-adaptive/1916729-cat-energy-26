@@ -78,16 +78,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 150px;
-    padding-top: 55px;
+    padding-top: 58px;
     padding-bottom: 55px;
   }
 
+  .footer-social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    width: 132px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-social__item {
+    width: 24px;
+    margin: 0;
+  }
+
   .main-footer__item {
-    justify-content: center;
-    width: 224px;
-    padding: 0 20px;
-    text-align: center;
+    padding: 0;
   }
 
   .main-footer__item:not(:last-child) {
@@ -100,6 +112,10 @@
 
   .academy-logo {
     justify-content: space-between;
+    height: 34px;
+    width: 163px;
+    margin: 0;
+    padding: 0;
   }
 }
 
