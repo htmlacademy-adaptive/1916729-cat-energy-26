@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-header__navigation main-header__navigation--open main-header__navigation--nojs">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
@@ -67,7 +67,7 @@
       </div>
     </div>
 
-    <section class="instructions container">
+    <section class="container instructions">
       <h2 class="instructions__title">Как это работает</h2>
       <ol class="instructions__list">
         <li class="instructions__item instructions__item--icon-leaf">
@@ -125,14 +125,14 @@
                 alt="Худой кот">
             </div>
             <div class="comparsion__controls">
-              <button class="comparsion__button" type="button" data-value="100">было</button>
+              <button class="comparsion__button" type="button" data-value="100"><span class="visually-hidden">было</span></button>
               <div class="comparsion__input">
                 <div class="comparsion__input-toggle">
                   <input class="comparsion__input-switch" type="range" min="0" max="100" value="50" tabindex="0">
                 </div>
 
               </div>
-              <button class="comparsion__button" type="button" data-value="0">стало</button>
+              <button class="comparsion__button" type="button" data-value="0"><span class="visually-hidden">стало</span></button>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
         width="486" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="main-footer__wrapper">
+    <div class="container main-footer__wrapper">
       <div class="main-footer__item main-footer__item--logo">
         <img class="footer-logo" src="./img/footer-logo.svg" width="128" height="24" alt="Логотип">
       </div>
