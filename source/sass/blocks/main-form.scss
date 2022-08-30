@@ -1,35 +1,19 @@
 @use "../abstract" as *;
 
 .main-form {
-  display: block;
-}
-
-.main-form__wrapper {
-  box-sizing: border-box;
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+  margin-top: 65px;
 }
 
 .main-form__title {
   margin: 0 auto 20px;
-  box-sizing: border-box;
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
   color: #111111;
-  border-top: 1px solid #d9d9d9;
 }
 
 .main-form__button {
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 5px;
   font-family: inherit;
   border: 0;
@@ -46,50 +30,65 @@
 
 @media (min-width: $tablet-width) {
   .main-form__title {
+    padding-left: $padding-tablet-form;
     font-size: 60px;
     font-weight: 400;
     border: 0;
-    margin-top: 44px;
-    margin-bottom: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 768px;
-  }
-
-  .main-form__wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 768px;
   }
 
   .main-form__title-about {
     margin-top: 55px;
     margin-bottom: 65px;
-    margin-left: 40px;
-    width: 345px;
+    padding-left: $padding-tablet-form;
+    width: 360px;
     padding-right: 0;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
   }
+
+  .main-form__button {
+    padding: 13px 45px;
+    font-size: 20px;
+    width: 282px;
+  }
+
+  .main-form__about-text {
+    padding-right: 128px;
+    flex-grow: 1;
+    align-self: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .main-form__title {
-    margin-top: 62px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 1280px;
+  .main-form {
+    margin-top: 74px;
   }
 
-  .main-form__wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 1280px;
+  .main-form__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-form__title {
+    margin: 0;
+    padding: 0;
   }
 
   .main-form__title-about {
-    margin-left: 0;
+    padding: 0;
+  }
+
+  .main-form__button {
+    width: 568px;
+  }
+
+  .main-form__about-text {
+    margin-left: 81px;
+    display: inherit;
   }
 }

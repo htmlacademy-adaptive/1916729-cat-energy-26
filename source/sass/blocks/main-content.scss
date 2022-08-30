@@ -47,11 +47,10 @@
 
 @media (min-width: $tablet-width) {
   .main-content {
+    position: relative;
     align-items: flex-start;
     padding-left: 120px;
     padding-right: 120px;
-    background-image: url("../img/product-image-tablet.jpg");
-    background-size: 709px;
     background-position: bottom;
     background-repeat: no-repeat;
     text-align: left;
@@ -62,6 +61,16 @@
   .main-content::before {
     background-image: none;
     background-color: #ffffff;
+  }
+
+  .main-content__image {
+    position: absolute;
+    content: "";
+    order: 3;
+    width: 709px;
+    height: 609px;
+    top: 256px;
+    left: 59px;
   }
 
   .main-content__title {
@@ -82,13 +91,9 @@
     text-transform: uppercase;
   }
 
-  .main-content__image {
-    order: 2;
-    display: none;
-  }
-
   .main-content__button--down {
     margin: 42px 0 0 0;
+    z-index: 1;
   }
 }
 
@@ -100,6 +105,15 @@
     padding-left: 120px;
     padding-right: 80px;
     background-size: 552px;
+  }
+
+  .main-content__image {
+    order: 3;
+    top: 46px;
+    width: 552px;
+    height: 499px;
+    right: 213px;
+    left: auto;
   }
 
   .main-content__title {

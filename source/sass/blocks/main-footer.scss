@@ -67,6 +67,14 @@
   color: #444444;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-footer__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     flex-direction: row;

@@ -7,12 +7,9 @@
 
 .stats__title {
   box-sizing: border-box;
-  padding: 18px 20px 23px;
   font-family: $oswald;
   font-size: 36px;
-  padding-left: 20px;
   line-height: 60px;
-  margin: 0 auto;
 }
 
 .stats__comparsion {
@@ -27,11 +24,8 @@
   }
 
   .stats__title {
-    width: 768px;
     font-size: 60px;
     font-weight: 400;
-    margin: 0 auto;
-    padding-left: 30px;
     margin-top: 15px;
     margin-bottom: 35px;
   }
@@ -88,19 +82,15 @@
 
 @media (min-width: $desktop-width) {
   .stats {
-    padding-top: 43px;
+    margin-top: 69px;
+    padding-bottom: 75px;
     border: 0;
-    background: linear-gradient(#ffffff 31%, #eaeaea 23%);
+    background: linear-gradient(#ffffff 22%, #eaeaea 23%);
   }
 
   .stats__title {
-    width: 1280px;
     margin-top: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 132px;
   }
 
   .stats__wrapper {
@@ -111,7 +101,6 @@
 
   .stats__example {
     flex-grow: 1;
-    padding-top: 72px;
   }
 
   .example__text {
