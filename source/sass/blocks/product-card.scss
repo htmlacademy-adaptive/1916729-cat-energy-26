@@ -1,5 +1,28 @@
 @use "../abstract" as *;
 
+.product-card {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    text-align: center;
+    top: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    transform: rotate(90deg) translateX(-49%);
+    margin-top: 15px;
+    left: 45%;
+  }
+}
+
 .product-card__title {
   font-family: $oswald;
   font-size: 16px;
@@ -42,6 +65,19 @@
     border: 0;
     margin-top: 100px;
     padding: 0 30px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      top: 23%;
+    }
+
+    &::after {
+      margin-top: 29px;
+      left: 41%;
+    }
   }
 
   .product-card--show-all {
@@ -78,7 +114,12 @@
     width: 245px;
     padding-left: 0;
     padding-right: 0;
+
+    &::after {
+      left: 38%;
+    }
   }
+
 
   .product-card__title {
     padding: 0 55px;
