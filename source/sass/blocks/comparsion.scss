@@ -8,6 +8,7 @@
   min-height: 256px;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .comparsion__wrapper::before {
@@ -20,6 +21,26 @@
   background-color: #666666;
   z-index: 1;
 }
+
+.comparsion__controls:hover,
+.comparsion__wrapper:hover::before {
+  background-color: #ffffff;
+  border: 2px solid #68b738;
+}
+
+.comparsion__controls:focus,
+.comparsion__wrapper:focus::before {
+  background-color: #ffffff;
+  border: 2px solid #68b738;
+}
+
+.comparsion__controls:active,
+.comparsion__wrapper:active::before {
+  background-color: #ffffff;
+  border: 2px solid #68b738;
+  opacity: 0.6;
+}
+
 
 .comparsion__controls {
   position: absolute;
@@ -34,7 +55,7 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .comparsion-photo {
