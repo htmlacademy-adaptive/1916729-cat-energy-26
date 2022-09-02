@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи: Функциональное питание для котов</title>
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="./manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/1916729-cat-energy-26/6/">
 </head>
 
@@ -116,6 +118,11 @@
         </div>
         <div class="stats__comparsion comparsion">
           <div class="comparsion__wrapper">
+            <div class="comparsion__controls">
+              <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" fill="#666" /></svg>
+
+            </div>
             <div class="comparsion__top">
               <img class="comparsion-photo comparsion-photo--before" src="./img/fat-cat.png" width="320" height="240"
                 alt="Упитанный кот">
@@ -124,19 +131,7 @@
               <img class="comparsion-photo comparsion-photo--after" src="./img/skinny-cat.png" width="320" height="240"
                 alt="Худой кот">
             </div>
-            <div class="comparsion__controls">
-              <button class="comparsion__button" type="button" data-value="100">
-                <span class="visually-hidden">было</span>
-              </button>
-              <div class="comparsion__input">
-                <div class="comparsion__input-toggle">
-                  <input class="comparsion__input-switch" type="range" min="0" max="100" value="50" tabindex="0">
-                </div>
-              </div>
-              <button class="comparsion__button" type="button" data-value="0">
-                <span class="visually-hidden">стало</span>
-              </button>
-            </div>
+
           </div>
         </div>
       </div>
