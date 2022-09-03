@@ -17,7 +17,7 @@
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1280px)" srcset="./img//icon-logo-desktop.png" width="202" height="59">
+            <source media="(min-width: 1280px)" srcset="./img/icon-logo-desktop.png" width="202" height="59">
             <source media="(min-width: 768px)" srcset="./img/icon-logo-tablet.png" width="174" height="51">
             <img src="./img/logo-mobile.svg" width="74" height="38" alt="Картинка с логотипом сайта">
           </picture>
@@ -31,26 +31,28 @@
       <div class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#">Главная</a>
+            <a class="navigation__link navigation__link-light navigation__link--current navigation__link--current-light" href="#">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог Продукции</a>
+            <a class="navigation__link navigation__link-light" href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
+            <a class="navigation__link navigation__link-light" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main-page">
-    <section class="container main-content">
-      <h1 class="main-content__title">Функциональное питание для котов</h1>
-      <b class="main-content__subtitle">Занялся собой? Зайимись котом!</b>
-      <img class="main-content__image" width="280" height="270" src="./img/main-product-image.png"
-        alt="Изображение товара продукции Кэт энерджи">
-      <a class="button main-content__button main-content__button--down" href="form.html">Подобрать программу</a>
-    </section>
+    <div class="main-page__background">
+      <section class="container main-content">
+        <h1 class="main-content__title">Функциональное питание для котов</h1>
+        <b class="main-content__subtitle">Занялся собой? Зайимись котом!</b>
+        <img class="main-content__image" width="280" height="270" src="./img/main-product-image.png"
+          alt="Изображение товара продукции Кэт энерджи">
+        <a class="button main-content__button main-content__button--down" href="form.html">Подобрать программу</a>
+      </section>
+    </div>
     <div class="container programs">
       <div class="programs__item programs__item-selection programs__item--weight-loss">
         <h2 class="visually-hidden">Программы питания</h2>
