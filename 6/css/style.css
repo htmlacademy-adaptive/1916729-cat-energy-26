@@ -1104,7 +1104,7 @@ html {
     z-index: -1;
   }
 }
-@media (min-width: 1280px), (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1280px) and (min-resolution: 144dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1280px) and (min-resolution: 144dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
   .main-page__background::before {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop@2x.jpg");
   }
@@ -2064,7 +2064,7 @@ html {
 
 @media (min-width: 768px) {
   .gift {
-    background-image: url("../../img/catalog-bgimage-tablet.jpg");
+    background-image: url("../img/catalog-bgimage-tablet.jpg");
     background-size: 707px;
     object-fit: contain;
     min-height: 200px;
@@ -2086,6 +2086,7 @@ html {
 }
 @media (min-width: 1280px) {
   .gift {
+    background-image: url("../img/catalog-bg-image-desktop.jpg");
     width: 245px;
     height: 289px;
     margin: 0;
@@ -2099,6 +2100,16 @@ html {
 
   .gift__text {
     margin-top: auto;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .gift {
+    background-image: url("../img/catalog-bgimage-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1280px) and (min-resolution: 144dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
+  .gift {
+    background-image: url("../img/catalog-bg-image-desktop@2x.jpg");
   }
 }
 .select-program-owner {
