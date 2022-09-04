@@ -7,6 +7,7 @@
   <title>Кэт Энерджи: Функциональное питание для котов</title>
   <link href="./css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="./manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/1916729-cat-energy-26/6/">
 </head>
@@ -16,10 +17,14 @@
     <nav class="main-header__navigation main-header__navigation--open main-header__navigation--nojs">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
-          <img src="./img/logo-mobile.svg" width="34" height="38" alt="Картинка с логотипом сайта">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/icon-logo-desktop.png" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="./img/icon-logo-tablet.png" width="174" height="51">
+            <img src="./img/logo-mobile.svg" width="74" height="38" alt="Картинка с логотипом сайта">
+          </picture>
         </a>
-        <a href="index.html"><img class="main-header__logo-text" src="./img/logo-text.png" width="101" height="18"
-            alt="Название сайта">
+        <a class="" href="index.html">
+          <img class="main-header__logo-text" src="./img/logo-text.png" width="101" height="18" alt="Название сайта">
         </a>
         <button class="main-header__button main-header__button--open" type="button" aria-label="Открыть меню">
         </button>
@@ -27,26 +32,31 @@
       <div class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#">Главная</a>
+            <a class="navigation__link navigation__link-light navigation__link--current navigation__link--current-light"
+              href="#">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог Продукции</a>
+            <a class="navigation__link navigation__link-light" href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
+            <a class="navigation__link navigation__link-light" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main-page">
-    <section class="container main-content">
-      <h1 class="main-content__title">Функциональное питание для котов</h1>
-      <b class="main-content__subtitle">Занялся собой? Зайимись котом!</b>
-      <img class="main-content__image" width="280" height="270" src="./img/main-product-image.png"
-        alt="Изображение товара продукции Кэт энерджи">
-      <a class="button main-content__button main-content__button--down" href="form.html">Подобрать программу</a>
-    </section>
+    <div class="main-page__background">
+      <section class="container main-content">
+        <h1 class="main-content__title">Функциональное питание для котов</h1>
+        <b class="main-content__subtitle">Занялся собой? Зайимись котом!</b>
+        <picture>
+          <img class="main-content__image" width="280" height="270" src="./img/main-product-image.png"
+            srcset="img/main-product-image@2x.png 2x" alt="Изображение товара продукции Кэт энерджи">
+        </picture>
+        <a class="button main-content__button main-content__button--down" href="form.html">Подобрать программу</a>
+      </section>
+    </div>
     <div class="container programs">
       <div class="programs__item programs__item-selection programs__item--weight-loss">
         <h2 class="visually-hidden">Программы питания</h2>
@@ -124,12 +134,18 @@
 
             </div>
             <div class="comparsion__top">
-              <img class="comparsion-photo comparsion-photo--before" src="./img/fat-cat.png" width="320" height="240"
-                alt="Упитанный кот">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/fat-cat-tablet.png, img/fat-cat-tablet@2x.png 2x">
+                <img class="comparsion-photo comparsion-photo--before" src="./img/fat-cat.png"
+                  srcset="./img/fat-cat@2x.png 2x" width="320" height="240" alt="Упитанный кот">
+              </picture>
             </div>
             <div class="comparsion__rigth">
-              <img class="comparsion-photo comparsion-photo--after" src="./img/skinny-cat.png" width="320" height="240"
-                alt="Худой кот">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/skinny-cat-tablet.png, img/skinny-cat-tablet@2x.png 2x">
+                <img class="comparsion-photo comparsion-photo--after" src="./img/skinny-cat.png"
+                  srcset="./img/skinny-cat@2x.png 2x" width="320" height="240" alt="Худой кот">
+              </picture>
             </div>
 
           </div>

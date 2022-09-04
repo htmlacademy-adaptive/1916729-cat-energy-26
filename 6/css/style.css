@@ -176,7 +176,7 @@ html {
   }
 
   .main-header__logo-text {
-    transform: translate(-50%, -26%);
+    display: none;
   }
 
   .main-header__button {
@@ -245,6 +245,7 @@ html {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding-top: 11px;
     padding-bottom: 7px;
     min-height: 36px;
   }
@@ -256,13 +257,20 @@ html {
   .navigation__item:not(:first-child) {
     padding-left: 35px;
   }
-}
-@media (min-width: 768px) {
+
   .navigation__link--current {
     border-bottom: 2px solid #68b738;
   }
 }
+@media (min-width: 1280px) {
+  .navigation__link-light {
+    color: #ffffff;
+  }
 
+  .navigation__link--current-light {
+    border-bottom: 2px solid #ffffff;
+  }
+}
 .main-content {
   position: relative;
   display: flex;
@@ -323,7 +331,7 @@ html {
 
   .main-content::before {
     background-image: none;
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
   .main-content__image {
@@ -374,7 +382,7 @@ html {
     top: 46px;
     width: 552px;
     height: 499px;
-    right: 213px;
+    right: 250px;
     left: auto;
   }
 
@@ -930,7 +938,7 @@ html {
 }
 
 .comparsion-photo--before {
-  left: 28px;
+  left: 19px;
   top: 3px;
 }
 
@@ -986,6 +994,7 @@ html {
 @media (min-width: 1280px) {
   .comparsion__wrapper {
     width: 690px;
+    min-height: 629px;
     margin-left: 0;
     margin-top: 0;
     padding: 0;
@@ -1074,6 +1083,30 @@ html {
 @media (min-width: 1280px) {
   .page-map {
     grid-area: map;
+  }
+}
+@media (min-width: 1280px) {
+  .main-page {
+    position: relative;
+  }
+
+  .main-page__background::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 694px;
+    top: -117px;
+    right: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+@media (min-width: 1280px), (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1280px) and (min-resolution: 144dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
+  .main-page__background::before {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index-background-desktop@2x.jpg");
   }
 }
 .main-footer__wrapper {
@@ -1288,6 +1321,7 @@ html {
 
 .main-catalog__link {
   flex-grow: 1;
+  margin: -73px 0;
 }
 
 .main-catalog__wrapper {
@@ -1352,7 +1386,7 @@ html {
     width: 324px;
     border: 0;
     padding: 0;
-    margin-top: 100px;
+    margin-top: 138px;
     background-color: #f2f2f2;
   }
 
@@ -1436,7 +1470,7 @@ html {
   }
 }
 .main-form {
-  margin-top: 65px;
+  margin-top: 27px;
 }
 
 .main-form__title {
@@ -1465,6 +1499,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .main-form {
+    margin-top: 65px;
+  }
+
   .main-form__title {
     padding-left: 40px;
     font-size: 60px;
@@ -1609,7 +1647,7 @@ html {
 @media (min-width: 1280px) {
   .stats {
     margin-top: 69px;
-    padding-bottom: 75px;
+    padding-bottom: 30px;
     border: 0;
     background: linear-gradient(#ffffff 22%, #eaeaea 23%);
   }
@@ -1745,8 +1783,9 @@ html {
 
   .product-card--show-all {
     background: 0 0;
-    outline: 1px solid #e6e6e6;
-    padding-top: 115px;
+    border: 1px solid #e6e6e6;
+    margin-top: 138px;
+    padding-top: 65px;
     justify-content: flex-start;
   }
 
@@ -1787,7 +1826,7 @@ html {
 
   .product-card__button-light {
     width: 170px;
-    margin-top: 112px;
+    margin-top: 74px;
   }
 }
 .additional {

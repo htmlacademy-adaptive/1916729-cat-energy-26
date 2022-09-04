@@ -7,6 +7,7 @@
   <title>Кэт Энерджи: Функциональное питание для котов</title>
   <link href="./css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="./manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/1916729-cat-energy-26/6/">
 </head>
@@ -16,8 +17,13 @@
     <nav class="main-header__navigation main-header__navigation--open main-header__navigation--nojs">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
-          <img src="./img/logo-mobile.svg" width="34" height="38" alt="Картинка с логотипом сайта">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/icon-logo-desktop.png" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="./img/icon-logo-tablet.png" width="174" height="51">
+            <img src="./img/logo-mobile.svg" width="74" height="38" alt="Картинка с логотипом сайта">
+          </picture>
         </a>
+
         <a href="index.html"><img class="main-header__logo-text" src="./img/logo-text.png" width="101" height="18"
             alt="Название сайта"></a>
         <button class="main-header__button main-header__button--open" type="button" aria-label="Открыть меню">
