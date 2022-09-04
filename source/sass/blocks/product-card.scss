@@ -82,8 +82,9 @@
 
   .product-card--show-all {
     background: 0 0;
-    outline: 1px solid #e6e6e6;
-    padding-top: 115px;
+    border: 1px solid #e6e6e6;
+    margin-top: 138px;
+    padding-top: 65px;
     justify-content: flex-start;
   }
 
@@ -120,13 +121,12 @@
     }
   }
 
-
   .product-card__title {
     padding: 0 55px;
   }
 
   .product-card__button-light {
     width: 170px;
-    margin-top: 112px;
+    margin-top: 74px;
   }
 }
