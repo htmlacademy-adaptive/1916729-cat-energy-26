@@ -4,14 +4,6 @@
   margin-bottom: 30px;
 }
 
-.instructions__wrapper {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  box-sizing: border-box;
-  width: 320px;
-}
-
 .instructions__title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -70,11 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .instructions {
-    margin-bottom: 15px;
-  }
-
-  .instructions__wrapper {
-    width: 768px;
+    margin-bottom: 0;
   }
 
   .instructions__title {
@@ -88,14 +76,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
+    width: 633px;
     counter-reset: advantage-counter;
   }
 
   .instructions__item {
     font-size: 16px;
     line-height: 24px;
-    width: 324px;
-    min-width: 226px;
+    width: 230px;
     margin-top: 45px;
     margin-bottom: 45px;
     padding-left: 0;
@@ -125,21 +113,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .instructions__wrapper {
-    width: 1280px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   .instructions__list {
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: auto;
   }
 
   .instructions__item {
-    width: 245px;
+    width: 246px;
     margin-bottom: 0;
     padding-right: 0;
-    margin-right: 40px;
     padding-top: 112px;
     min-height: 226px;
   }

@@ -3,10 +3,7 @@
 .programs {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
   box-sizing: border-box;
-  width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,7 +64,7 @@
 }
 
 .programs__text {
-  margin-bottom: 22px;
+  padding-bottom: 22px;
   text-align: left;
   font-family: $arial;
   font-size: 14px;
@@ -75,9 +72,12 @@
   color: #444444;
 }
 
+.programs__text br {
+  display: none;
+}
+
 .programs__link {
   position: relative;
-  display: block;
   padding-top: 19px;
   padding-right: 145px;
   border-top: 1px solid #d9d9d9;
@@ -95,19 +95,17 @@
   background-image: url("../img/icon_arrow.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  right: 110px;
+  right: 93px;
   top: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .programs {
-    width: 708px;
-    padding-left: 30px;
-    padding-right: 30px;
     margin-bottom: 45px;
   }
 
   .programs__item {
+    min-height: 372px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -140,6 +138,21 @@
     width: 100%;
   }
 
+  .programs__text br {
+    display: block;
+  }
+
+  .programs__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    border: 0;
+  }
+
+  .programs__link::after {
+    top: 29px;
+  }
+
   .programs__item--weight-loss::after {
     width: 140px;
     height: 194px;
@@ -157,15 +170,11 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .programs {
-    width: 1280px;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .programs__item {
@@ -195,6 +204,10 @@
   .programs__text {
     margin-bottom: 20px;
     min-width: 466px;
+  }
+
+  .programs__text br {
+    display: none;
   }
 
   .programs__link {

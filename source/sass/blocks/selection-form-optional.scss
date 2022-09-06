@@ -18,7 +18,7 @@
   text-transform: none;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
   width: 183px;
   align-self: flex-start;
   position: relative;
@@ -29,19 +29,16 @@
 }
 
 .selection-form-optional__wrapper {
-  box-sizing: border-box;
-  width: 320px;
-  padding: 0;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 0;
   list-style: none;
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  padding: 0;
+  border: 0;
 }
 
 .selection-form-optional__wrapper--elevated {
@@ -56,11 +53,10 @@
 }
 
 .selection-form-optional__filter-item {
+  position: relative;
   min-height: 30px;
   align-items: center;
   margin-bottom: 13px;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -71,13 +67,40 @@
   padding-bottom: 6px;
 }
 
+.selection-form-optional__control::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  left: 0;
+  top: 0;
+}
+
+.selection-form-optional__input:checked + .selection-form-optional__text::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 16px;
+  background-position: center center;
+  top: 0;
+  left: 0;
+}
+
+.selection-form-optional__input {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .selection-form-optional::before {
-    top: 21px;
+  .selection-form-optional {
+    margin-top: 63px;
   }
 
-  .selection-form-optional__wrapper {
-    width: 768px;
+  .selection-form-optional::before {
+    top: 21px;
   }
 
   .selection-form-optional__title {
@@ -87,7 +110,8 @@
     width: 292px;
     position: relative;
     padding-left: 30px;
-    margin-left: calc((100% - 768px) / 2);
+    margin-top: 0;
+    margin-left: calc((100% - 768px) / 2 + 40px);
     background: #ffffff;
   }
 
@@ -96,8 +120,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: $padding-tablet-form;
+    padding-right: $padding-tablet-form;
     margin-top: 21px;
   }
 
@@ -110,32 +134,37 @@
     min-height: 40px;
   }
 
+  .selection-form-optional__input:checked + .selection-form-optional__text::after {
+    top: 5px;
+    left: 5px;
+  }
+
+  .selection-form-optional__control::before {
+    width: 40px;
+    height: 40px;
+    top: 0;
+  }
+
+  .selection-form-optional__text {
+    padding-left: 26px;
+  }
+
   .selection-form-optional__button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 768px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .main-form__button {
-    padding: 13px 45px;
-    font-size: 20px;
-  }
-
-  .main-form__about-text {
-    padding-right: 128px;
-    flex-grow: 1;
-    align-self: center;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
+    width: 708px;
+    margin: 50px auto;
+    padding-left: $padding-tablet-form;
+    padding-right: $padding-tablet-form;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .selection-form-optional__wrapper {
+    margin: 0;
+  }
+
   .selection-form-optional::before {
     top: 20px;
   }
@@ -143,31 +172,36 @@
   .selection-form-optional__title {
     width: 292px;
     position: relative;
-    padding-left: 40px;
+    padding-left: 30px;
+    margin-bottom: 57px;
     margin-left: calc((100% - 1280px) / 2);
     background: #ffffff;
   }
 
   .selection-form-optional__list-preferences {
     padding: 0;
+    margin: 0;
     justify-content: flex-start;
-    width: 1280px;
   }
 
   .selection-form-optional__filter-item {
-    width: auto;
-    min-width: 245px;
+    width: 221px;
     padding-right: 0;
-    margin-left: 40px;
-    margin-right: 40px;
     margin-bottom: 18px;
+  }
+
+  .selection-form-optional__filter-item:not(:last-child) {
+    margin-right: 104px;
+  }
+
+  .selection-form-optional__text {
+    padding-left: 19px;
   }
 
   .selection-form-optional__button {
     margin-top: 61px;
     margin-bottom: 82px;
-    width: 1280px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 1220px;
+    padding: 0;
   }
 }

@@ -2,6 +2,7 @@
 @use "my-vars";
 @use "fonts";
 //Стили для  БЭМ блоков
+@use "./blocks/container";
 @use "./blocks/main-header";
 @use "./blocks/navigation";
 @use "./blocks/main-content";
@@ -12,6 +13,7 @@
 @use "./blocks/comparsion";
 @use "./blocks/invitation";
 @use "./blocks/map";
+@use "./blocks/main-page";
 @use "./blocks/main-footer";
 @use "./blocks/main-catalog";
 @use "./blocks/main-form";
