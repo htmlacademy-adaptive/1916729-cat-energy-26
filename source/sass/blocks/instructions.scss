@@ -6,10 +6,11 @@
 
 .instructions__title {
   margin-top: 0;
-  margin-bottom: 20px;
-  font-family: $oswald;
+  margin-bottom: 33px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 35px;
+  font-weight: 400;
   text-align: left;
   color: #111111;
 }
@@ -28,8 +29,8 @@
   font-size: 14px;
   line-height: 18px;
   padding-left: 80px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 8px;
   min-height: 60px;
 }
 
@@ -42,6 +43,7 @@
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
+  transform: translateY(-2px);
 }
 
 .instructions__item--icon-leaf::before {

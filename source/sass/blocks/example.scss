@@ -14,7 +14,7 @@
 
 .example__text {
   padding-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   min-height: 108px;
   font-family: $arial;
   font-size: 14px;
@@ -29,7 +29,7 @@
   flex-wrap: wrap;
   width: 280px;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   padding-left: 0;
 }
 
@@ -48,8 +48,8 @@
   font-size: 24px;
   line-height: 24px;
   color: #111111;
-  padding-top: 14px;
-  padding-bottom: 18px;
+  font-weight: 400;
+  padding: 13px 9px 8px 9px;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -58,13 +58,13 @@
 .example__result-text {
   width: 87px;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 7px;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 100%;
   color: #444444;
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
-  margin-top: -8px;
+  margin-top: -9px;
   background-color: #f2f2f2;
 }
 
@@ -76,7 +76,7 @@
   margin-right: auto;
   margin-top: 7px;
   height: auto;
-  width: auto;
+  min-width: 188px;
   align-items: baseline;
 }
 
@@ -85,6 +85,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #111111;
+  flex-grow: 1;
   width: auto;
   padding: 0;
   height: auto;
