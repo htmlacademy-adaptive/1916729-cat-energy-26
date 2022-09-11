@@ -100,7 +100,6 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 78px;
-    width: 768px;
   }
 
   .comparsion__rigth {
@@ -129,21 +128,50 @@
   }
 
   .comparsion-photo--before {
-    left: 68px;
-    top: 1px;
+    left: 44px;
+    top: 8px;
   }
 
   .comparsion-photo--after {
-    right: 75px;
+    right: 44px;
+    top: 8px;
+  }
+
+  .comparsion__wrapper::before {
+    height: 99%;
+    top: 8px;
+  }
+
+  .comparsion__controls {
+    top: 51%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comparsion__wrapper {
-    width: 690px;
+    width: 560px;
     min-height: 512px;
-    margin-left: 0;
+    margin-left: 139px;
     margin-top: 0;
     padding: 0;
+  }
+
+  .comparsion-photo--before {
+    left: 0;
+    top: 28px;
+  }
+
+  .comparsion-photo--after {
+    right: 0;
+    top: 28px;
+  }
+
+  .comparsion__wrapper::before {
+    height: 99%;
+    top: 28px;
+  }
+
+  .comparsion__controls {
+    top: 55%;
   }
 }

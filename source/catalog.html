@@ -19,7 +19,7 @@
           <picture>
             <source media="(min-width: 1280px)" srcset="./img/icon-logo-desktop.png" width="202" height="59">
             <source media="(min-width: 768px)" srcset="./img/icon-logo-tablet.png" width="174" height="51">
-            <img src="./img/logo-mobile.svg" width="74" height="38" alt="Картинка с логотипом сайта">
+            <img src="./img/logo-mobile.svg" width="34" height="38" alt="Картинка с логотипом сайта">
           </picture>
         </a>
         <a href="index.html"><img class="main-header__logo-text" src="./img/logo-text.png" width="101" height="18"
@@ -29,15 +29,15 @@
         </button>
       </div>
       <div class="navigation navigation--open">
-        <ul class="navigation__list">
+        <ul class="navigation__list navigation__list--catalog">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+            <a class="navigation__link navigation__link-catalog" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link  navigation__link--current" href="#">Каталог Продукции</a>
+            <a class="navigation__link navigation__link-catalog navigation__link--current navigation__link--current-catalog" href="#">Каталог Продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
+            <a class="navigation__link navigation__link-catalog" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -227,7 +227,7 @@
           <a class="button main-catalog__button" href="#">Заказать</a>
         </div>
         <section class="product-card product-card--show-all">
-          <h3 class="product-card__title">Показать еще 100500 товаров</h3>
+          <h3 class="product-card__title">показать еще 100500 товаров</h3>
           <p class="product-card__subtitle">На самом деле вкусов гораздо больше!</p>
           <a class="button product-card__button-light" href="#">показать все</a>
         </section>
@@ -244,7 +244,7 @@
                 <th>Сахарозаменитель</th>
                 <td>1 упаковка (100 г)</td>
                 <td>200 Р.</td>
-                <th><a class="button additional__button" href="#">Заказать</a></th>
+                <th><a class="button additional__button additional__button--top" href="#">Заказать</a></th>
               </tr>
               <tr class="additional__table">
                 <th>Питьевая вода</th>
@@ -262,7 +262,7 @@
                 <th>Витамины</th>
                 <td>1 упаковка (30 г)</td>
                 <td>300 Р.</td>
-                <th><a class="button additional__button" href="#">Заказать</a></th>
+                <th><a class="button additional__button additional__button--bottom" href="#">Заказать</a></th>
               </tr>
             </tbody>
           </table>
@@ -277,9 +277,12 @@
   </main>
 
   <footer class="main-footer">
-    <section class="invitation invitation-text">
+    <section class="invitation invitation-text invitation-text--dark">
       <h2 class="invitation__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-      <p class="invitation__text">ул. Большая Конюшенная, д.19/8<br> Санкт-Петербург</p>
+      <div class="invitation__text__wrapper">
+        <p class="invitation__text">ул. Большая Конюшенная, д.&nbsp;19/8</p>
+        <p class="invitation__text invitation__text--bottom">Санкт-Петербург</p>
+      </div>
     </section>
     <div class="page-map">
       <iframe class="page-map__link"
@@ -294,7 +297,7 @@
       <div class="main-footer__item footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="footer-social__list">
-          <li class="footer-social__item">
+          <li class="footer-social__item footer-social__item--catalog">
             <a class="footer-social__link" href="#">
               <svg class="social-icon" width="27" height="17" viewBox="0 0 27 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -302,7 +305,7 @@
               </svg>
             </a>
           </li>
-          <li class="footer-social__item">
+          <li class="footer-social__item footer-social__item--catalog">
             <a class="footer-social__link" href="#">
               <svg class="social-icon" width="24" height="19" viewBox="0 0 24 19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +314,7 @@
               <span class="visusally-hidden"></span>
             </a>
           </li>
-          <li class="footer-social__item">
+          <li class="footer-social__item footer-social__item--catalog">
             <a class="footer-social__link" href="#">
               <svg class="social-icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">

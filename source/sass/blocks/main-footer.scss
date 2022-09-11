@@ -30,9 +30,15 @@
 }
 
 .footer-social__item {
-  width: 22px;
-  margin-left: 15px;
-  margin-right: 16px;
+  width: 21px;
+  margin-left: 16px;
+  margin-right: 17px;
+}
+
+.footer-social__item--catalog {
+  width: 24px;
+  margin-left: 12px;
+  margin-right: 17px;
 }
 
 .social-icon {
@@ -97,6 +103,7 @@
     width: 132px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 24px;
   }
 
   .footer-social__item {
@@ -138,5 +145,13 @@
 
   .footer-logo {
     align-self: baseline;
+  }
+
+  .footer-social__list {
+    margin-left: 53px;
+  }
+
+  .copyright-link {
+    margin-left: 81px;
   }
 }

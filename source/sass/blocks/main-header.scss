@@ -40,6 +40,10 @@
   cursor: pointer;
 }
 
+.main-header__navigation {
+  padding-bottom: 1px;
+}
+
 .main-header__navigation--closed .main-header__button::before {
   content: "";
   position: absolute;
@@ -111,6 +115,7 @@
 
   .main-header__wrapper {
     min-width: 174px;
+    min-height: 52px;
     padding: 0;
   }
 

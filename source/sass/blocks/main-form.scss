@@ -5,10 +5,11 @@
 }
 
 .main-form__title {
-  margin: 0 auto 20px;
-  font-family: $oswald;
+  margin: 0 auto 34px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 36px;
   text-align: left;
   color: #111111;
 }
@@ -16,17 +17,34 @@
 .main-form__button {
   margin-bottom: 5px;
   font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   border: 0;
+  margin-top: 20px;
+}
+
+.main-form__title-about {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 18px;
+  padding-right: 47px;
+  padding-top: 3px;
+}
+
+.selection-form__item:first-child {
   margin-top: 26px;
 }
 
+
 .main-form__about-text {
   text-align: center;
-  font-family: inherit;
+  font-family: $arial;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 17px;
-  margin-bottom: 14px;
+  margin-top: 21px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,15 +53,16 @@
   }
 
   .main-form__title {
-    padding-left: $padding-tablet-form;
     font-size: 60px;
     font-weight: 400;
+    padding: 7px 0 0 39px;
+    margin-bottom: 63px;
     border: 0;
   }
 
   .main-form__title-about {
     margin-top: 55px;
-    margin-bottom: 65px;
+    margin-bottom: 38px;
     padding-left: $padding-tablet-form;
     width: 360px;
     padding-right: 0;
@@ -57,10 +76,11 @@
     padding: 13px 45px;
     font-size: 20px;
     width: 282px;
+    min-height: 52px;
   }
 
   .main-form__about-text {
-    padding-right: 128px;
+    margin: 10px 47px 0 4px;
     flex-grow: 1;
     align-self: center;
     font-weight: 400;
@@ -71,7 +91,7 @@
 
 @media (min-width: $desktop-width) {
   .main-form {
-    margin-top: 74px;
+    margin-top: 81px;
   }
 
   .main-form__container {
@@ -86,6 +106,7 @@
 
   .main-form__title-about {
     padding: 0;
+    margin-top: 70px;
   }
 
   .main-form__button {
@@ -93,7 +114,7 @@
   }
 
   .main-form__about-text {
-    margin-left: 81px;
+    margin: 14px 0 0 82px;
     display: inherit;
   }
 }

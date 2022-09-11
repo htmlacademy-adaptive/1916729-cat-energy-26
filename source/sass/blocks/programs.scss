@@ -116,7 +116,7 @@
 
 @media (min-width: $tablet-width) {
   .programs {
-    margin-bottom: 45px;
+    margin-bottom: 26px;
   }
 
   .programs__item {
@@ -125,13 +125,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 56px 275px 56px 55px;
+    padding: 56px 290px 37px 52px;
+    margin-bottom: 30px;
   }
 
   .programs__item::before {
     width: 200px;
     height: 200px;
-    right: 62px;
+    right: 61px;
     left: auto;
     top: 92px;
   }
@@ -140,14 +141,14 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 37px;
-    margin-top: 20px;
-    margin-bottom: 24px;
+    margin-top: 19px;
+    margin-bottom: 26px;
     margin-left: 0;
   }
 
   .programs__text {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 26px;
     font-size: 16px;
     line-height: 24px;
     width: 100%;
@@ -165,7 +166,8 @@
   }
 
   .programs__link::after {
-    top: 29px;
+    top: 24px;
+    left: 131px;
   }
 
   .programs__item--weight-loss::after {
@@ -200,24 +202,25 @@
   .programs__item::before {
     width: 100px;
     height: 100px;
-    top: 47px;
+    top: 45px;
     left: 52px;
   }
 
   .programs__item--weight-loss::after {
     width: 70px;
     height: 97px;
-    top: 41px;
+    top: 39px;
     left: 66px;
   }
 
   .programs__title {
-    margin-bottom: 75px;
-    padding-left: 163px;
+    margin-bottom: 74px;
+    padding-left: 162px;
+    margin-top: 18px;
   }
 
   .programs__text {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     min-width: 466px;
   }
 
@@ -233,15 +236,26 @@
     line-height: 30px;
   }
 
-  .programs__link::after {
+  .programs__link--right::after {
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
     top: 19px;
-    left: 127px;
+    left: 130px;
+  }
+
+  .programs__link--left::after {
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    top: 19px;
+    left: 136px;
   }
 
   .programs__item--weight-gain::after {
     width: 134px;
     height: 56px;
-    top: 69px;
-    left: 34px;
+    top: 65px;
+    left: 33px;
   }
 }

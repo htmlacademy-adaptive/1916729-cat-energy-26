@@ -42,7 +42,7 @@
 }
 
 .selection-form-optional__wrapper--elevated {
-  margin-top: 23px;
+  margin-top: -2px;
 }
 
 .selection-form-optional__list-preferences {
@@ -96,11 +96,11 @@
 
 @media (min-width: $tablet-width) {
   .selection-form-optional {
-    margin-top: 63px;
+    margin-top: 60px;
   }
 
   .selection-form-optional::before {
-    top: 21px;
+    top: 22px;
   }
 
   .selection-form-optional__title {
@@ -109,9 +109,9 @@
     line-height: 36px;
     width: 292px;
     position: relative;
-    padding-left: 30px;
+    padding-left: 39px;
     margin-top: 0;
-    margin-left: calc((100% - 768px) / 2 + 40px);
+    margin-left: calc((100% - 768px) / 2 + 31px);
     background: #ffffff;
   }
 
@@ -135,7 +135,7 @@
   }
 
   .selection-form-optional__input:checked + .selection-form-optional__text::after {
-    top: 5px;
+    top: 8px;
     left: 5px;
   }
 
@@ -146,7 +146,7 @@
   }
 
   .selection-form-optional__text {
-    padding-left: 26px;
+    padding-left: 14px;
   }
 
   .selection-form-optional__button {
@@ -154,8 +154,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 708px;
-    margin: 50px auto;
-    padding-left: $padding-tablet-form;
+    margin: 1px auto 67px;
+    padding-left: 41px;
     padding-right: $padding-tablet-form;
   }
 }
@@ -165,16 +165,20 @@
     margin: 0;
   }
 
+  .selection-form-optional {
+    margin-top: 63px;
+  }
+
   .selection-form-optional::before {
-    top: 20px;
+    top: 23px;
   }
 
   .selection-form-optional__title {
     width: 292px;
     position: relative;
-    padding-left: 30px;
+    padding-left: 40px;
     margin-bottom: 57px;
-    margin-left: calc((100% - 1280px) / 2);
+    margin-left: calc((100% - 1280px) / 2 + -10px);
     background: #ffffff;
   }
 
@@ -195,13 +199,13 @@
   }
 
   .selection-form-optional__text {
-    padding-left: 19px;
+    padding-left: 14px;
   }
 
   .selection-form-optional__button {
-    margin-top: 61px;
-    margin-bottom: 82px;
+    margin-top: 21px;
+    margin-bottom: 77px;
     width: 1220px;
-    padding: 0;
+    padding-left: 1px;
   }
 }
