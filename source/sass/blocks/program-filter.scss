@@ -15,7 +15,7 @@
     content: "";
     width: 100%;
     left: 0;
-    transform: translateY(140px);
+    transform: translateY(132px);
     border-bottom: 1px solid #ededed;
   }
 
@@ -24,7 +24,7 @@
     content: "";
     width: 100%;
     left: 0;
-    transform: translateY(-150px);
+    transform: translateY(-154px);
     border-bottom: 1px solid #ededed;
   }
 }
@@ -38,11 +38,6 @@
   padding: 0;
   list-style: none;
 }
-
-// .program-filter__list--goal {
-//   padding: 20px 0 20px 0;
-//   border: 1px solid #ededed;
-// }
 
 .program-filter__item {
   position: relative;
@@ -79,14 +74,10 @@
   left: 9px;
 }
 
-// .program-filter__control-label {
-//   padding-left: 45px;
-// }
-
 @media (min-width: $tablet-width) {
   .program-filter {
-    margin-bottom: 52px;
-    margin-top: 50px;
+    margin-bottom: 73px;
+    margin-top: 52px;
     padding-left: $padding-tablet-form;
     padding-right: 40px;
     font-size: 20px;
@@ -100,11 +91,16 @@
   }
 
   .program-filter__control-input:checked ~ .program-filter__control-label::after {
-    top: 16px;
+    top: 9px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
   }
 
   .program-filter__control::before {
-    top: 7px;
+    top: -2px;
+    width: 40px;
+    height: 40px;
   }
 
   .program-filter__item:first-child {
@@ -116,7 +112,7 @@
   }
 
   span.program-filter__control-label {
-    padding-left: 20px;
+    padding-left: 31px;
   }
 
   .program-filter__list {
@@ -134,15 +130,15 @@
 @media (min-width: $desktop-width) {
   .program-filter {
     width: 568px;
-    margin-bottom: 46px;
+    margin-bottom: 25px;
     padding: 0;
     margin-top: 0;
   }
 
   .program-filter__list--goal {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin: 0;
+    padding-top: 26px;
+    padding-bottom: 22px;
+    margin: 26px 0 0 -2px;
     width: 100%;
   }
 

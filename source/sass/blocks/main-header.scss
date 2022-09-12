@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  min-height: 52px;
+  min-height: 64px;
   margin: 0 auto;
 }
 
@@ -26,7 +26,6 @@
 .main-header__logo-text {
   position: absolute;
   left: 50%;
-  margin-left: 12px;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -39,6 +38,10 @@
   appearance: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.main-header__navigation {
+  padding-bottom: 1px;
 }
 
 .main-header__navigation--closed .main-header__button::before {
@@ -112,6 +115,7 @@
 
   .main-header__wrapper {
     min-width: 174px;
+    min-height: 52px;
     padding: 0;
   }
 

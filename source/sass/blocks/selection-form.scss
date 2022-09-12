@@ -29,10 +29,13 @@
 .selection-form__field-control {
   height: 45px;
   margin-left: 15px;
-  padding: 12px 13px;
+  padding: 2px 12px 3px 13px;
   border: 1px solid #e6e6e6;
   text-transform: uppercase;
   font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   flex-grow: 1;
   width: 50%;
 }
@@ -68,7 +71,7 @@
     font-weight: 400;
     line-height: 30px;
     height: 52px;
-    padding: 14px 20px 13px;
+    padding: 14px 17px 12px;
     margin-left: 18px;
   }
 }
@@ -88,7 +91,7 @@
   .selection-form {
     width: 569px;
     padding: 0;
-    margin-bottom: 46px;
+    margin-bottom: 25px;
   }
 
   .selection-form__wrapper {

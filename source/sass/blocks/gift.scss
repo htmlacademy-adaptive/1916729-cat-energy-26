@@ -4,14 +4,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 45px;
-  min-height: 289px;
+  padding: 45px 45px 0 45px;
+  min-height: 290px;
   width: auto;
   background-color: #68b738;
   background-image: url("../img/catalog-background-image.png");
-  background-size: 280px auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 35px;
 }
 
@@ -20,7 +20,7 @@
   content: "";
   width: 78px;
   height: 80px;
-  top: 65px;
+  top: 58px;
   left: 50%;
   background-image: url("../img/icon-gift-catalog.svg");
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
 .gift__text {
   display: block;
-  margin-top: auto;
+  margin-top: 53px;
   font-family: $arial;
   font-weight: 400;
   font-size: 16px;
@@ -53,12 +53,13 @@
   }
 
   .gift::before {
-    transform: translateX(-260px) translateY(-4px);
+    transform: translateX(-275px) translateY(0);
   }
 
   .gift__text {
     margin-top: 0;
     padding-top: 71px;
+    text-align: left;
   }
 }
 
@@ -73,11 +74,13 @@
   }
 
   .gift::before {
-    transform: translateX(-38px) translateY(-4px);
+    transform: translateX(-38px) translateY(-1px);
   }
 
   .gift__text {
-    margin-top: auto;
+    margin-top: 75px;
+    padding-left: 0px;
+    text-align: center;
   }
 }
 
