@@ -40,10 +40,6 @@
   cursor: pointer;
 }
 
-.main-header__navigation {
-  padding-bottom: 1px;
-}
-
 .main-header__navigation--closed .main-header__button::before {
   content: "";
   position: absolute;
@@ -73,8 +69,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 16px;
-    left: 18px;
+    top: 20px;
+    left: 19px;
     width: 25px;
     height: 2px;
     background-color: #222222;
@@ -125,6 +121,10 @@
 
   .main-header__button {
     display: none;
+  }
+
+  .main-header__navigation--closed .navigation {
+    display: block;
   }
 }
 
