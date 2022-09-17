@@ -3,6 +3,7 @@
 .navigation {
   position: relative;
   flex-grow: 1;
+  z-index: 5;
 }
 
 .navigation__item {
@@ -33,6 +34,8 @@
   padding-left: 0;
   margin: 0 auto;
   min-height: 200px;
+  margin-bottom: -200px;
+  background: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,6 +51,7 @@
     align-content: flex-start;
     margin-left: 91px;
     margin-bottom: 2px;
+    background: none;
   }
 
   .navigation__link {

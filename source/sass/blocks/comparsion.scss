@@ -8,6 +8,7 @@
   min-height: 256px;
   margin: 0 auto;
   margin-bottom: 40px;
+  width: 280px;
 }
 
 .comparsion__wrapper::before {
@@ -69,14 +70,14 @@
 
 .comparsion__rigth {
   display: block;
-  width: 50%;
+  width: 100%;
   position: relative;
   overflow: hidden;
   min-height: 256px;
 }
 
 .comparsion__top {
-  width: 50%;
+  width: 280px;
   position: relative;
   overflow: hidden;
   min-height: 256px;
@@ -94,27 +95,28 @@
 @media (min-width: $tablet-width) {
   .comparsion__wrapper {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    min-height: 462px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 78px;
+    min-height: 512px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 85px;
+    width: 560px;
   }
 
   .comparsion__rigth {
     display: block;
-    width: 50%;
+    width: 100%;
     position: relative;
     overflow: hidden;
-    min-height: 517px;
+    min-height: 512px;
   }
 
   .comparsion__top {
-    width: 50%;
+    width: 560px;
     position: relative;
     overflow: hidden;
-    min-height: 517px;
+    min-height: 512px;
   }
 
   .comparsion-photo {
@@ -128,22 +130,22 @@
   }
 
   .comparsion-photo--before {
-    left: 44px;
-    top: 8px;
+    left: 0;
+    top: 2px;
   }
 
   .comparsion-photo--after {
-    right: 44px;
-    top: 8px;
+    right: 0;
+    top: 2px;
   }
 
   .comparsion__wrapper::before {
-    height: 99%;
-    top: 8px;
+    height: 100%;
+    top: 2px;
   }
 
   .comparsion__controls {
-    top: 51%;
+    top: 50.3%;
   }
 }
 
@@ -152,26 +154,26 @@
     width: 560px;
     min-height: 512px;
     margin-left: 139px;
-    margin-top: 0;
+    margin-top: 28px;
     padding: 0;
   }
 
   .comparsion-photo--before {
     left: 0;
-    top: 28px;
+    top: 0;
   }
 
   .comparsion-photo--after {
     right: 0;
-    top: 28px;
+    top: 0;
   }
 
   .comparsion__wrapper::before {
-    height: 99%;
-    top: 28px;
+    height: 100%;
+    top: 0;
   }
 
   .comparsion__controls {
-    top: 55%;
+    top: 50%;
   }
 }
