@@ -63,6 +63,14 @@
   color: #444444;
   margin: 0 auto;
   max-width: 279px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

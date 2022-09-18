@@ -59,20 +59,39 @@
   top: 0;
 }
 
-.program-filter__control-input {
-  display: none;
+.program-filter__control:hover::before {
+  border-color: #bababa;
+}
+
+.program-filter__control:active::before,
+.program-filter__control-label:active {
+  opacity: 0.3;
 }
 
 .program-filter__control-input:checked ~ .program-filter__control-label::after {
   position: absolute;
   content: "";
+  background: #68b738;
+  border-radius: 50%;
   width: 12px;
   height: 12px;
-  border-radius: 50%;
-  background: #68b738;
   top: 9px;
   left: 9px;
 }
+
+.program-filter__control-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 @media (min-width: $tablet-width) {
   .program-filter {

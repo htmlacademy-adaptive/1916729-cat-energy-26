@@ -44,6 +44,14 @@
   font-size: 14px;
   min-height: 40px;
   line-height: 18px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main-content::before {

@@ -45,6 +45,10 @@
   margin-top: -2px;
 }
 
+.selection-form-optional__text:active {
+  opacity: 0.3;
+}
+
 .selection-form-optional__list-preferences {
   padding: 0;
   margin: 0 auto;
@@ -75,6 +79,14 @@
   border: 1px solid #cdcdcd;
   left: 0;
   top: 0;
+}
+
+.selection-form-optional__control:hover::before {
+  border-color: #bababa;
+}
+
+.selection-form-optional__control:active::before {
+  opacity: 0.3;
 }
 
 .selection-form-optional__input:checked + .selection-form-optional__text::after {

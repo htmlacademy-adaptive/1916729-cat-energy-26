@@ -23,6 +23,16 @@
   position: relative;
 }
 
+.main-header__wrapper-image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-header__logo-text {
   position: absolute;
   left: 50%;
