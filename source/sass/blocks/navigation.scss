@@ -25,6 +25,14 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #333333;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__list {

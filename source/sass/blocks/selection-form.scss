@@ -30,7 +30,7 @@
   height: 45px;
   margin-left: 15px;
   padding: 2px 12px 3px 13px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #e7e7e7;
   text-transform: uppercase;
   font-family: inherit;
   font-weight: 400;
@@ -38,6 +38,15 @@
   line-height: 18px;
   flex-grow: 1;
   width: 50%;
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: #ff8282;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
