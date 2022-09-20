@@ -6,6 +6,13 @@
   height: 362px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-map,
+  .page-map iframe {
+    height: 400px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-map {
     grid-area: map;

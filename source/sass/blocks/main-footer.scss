@@ -11,7 +11,7 @@
   align-items: stretch;
   box-sizing: border-box;
   padding-top: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 
 .main-footer__item:not(:last-child) {
@@ -30,27 +30,52 @@
 }
 
 .footer-social__item {
-  width: 22px;
-  margin-left: 17px;
+  width: 21px;
+  margin-left: 16px;
+  margin-right: 17px;
+}
+
+.footer-social__item--catalog {
+  width: 24px;
+  margin-left: 12px;
   margin-right: 17px;
 }
 
 .social-icon {
   height: 19px;
   color: #666666;
+
+  &:hover {
+    stroke: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.footer-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__item--logo {
   align-items: center;
-  padding-top: 38px;
-  padding-bottom: 30px;
+  padding-top: 39px;
+  padding-bottom: 31px;
 }
 
 .academy-logo {
   padding-top: 22px;
   display: flex;
   flex-direction: row;
-  width: 280px;
+  width: 281px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -59,11 +84,23 @@
   font-size: 16px;
   line-height: 16px;
   color: #444444;
+
+  &:hover {
+    stroke: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright-link {
-  margin-top: 10px;
+  margin-top: 8px;
   text-decoration: none;
+  color: #444444;
+}
+
+.copyright-link-icon {
   color: #444444;
 }
 
@@ -93,6 +130,7 @@
     width: 132px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 24px;
   }
 
   .footer-social__item {
@@ -134,5 +172,13 @@
 
   .footer-logo {
     align-self: baseline;
+  }
+
+  .footer-social__list {
+    margin-left: 53px;
+  }
+
+  .copyright-link {
+    margin-left: 81px;
   }
 }

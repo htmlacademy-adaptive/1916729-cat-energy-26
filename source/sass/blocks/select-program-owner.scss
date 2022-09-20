@@ -9,7 +9,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  top: 18px;
+  top: 16px;
   border-top: 2px solid #68b738;
   z-index: 0;
 }
@@ -20,6 +20,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  margin-top: 30px;
   color: #111111;
   margin-bottom: 35px;
   margin-left: calc((100% - 320px) / 2);
@@ -36,6 +37,7 @@
   border: 0;
   text-transform: uppercase;
   color: #222222;
+  margin-bottom: 13px;
 }
 
 .select-program-owner-line {
@@ -53,57 +55,81 @@
 .select-program-owner__icon-email {
   stroke: #222222;
   fill: none;
+  position: absolute;
+  right: 35px;
+  top: 104px;
 }
 
 .select-program-owner__icon-phone {
   fill: #222222;
+  position: absolute;
+  right: 33px;
+  top: 160px;
 }
 
-.select-program-owner__icon {
-  display: flex;
-  border: 1px solid #e6e6e6;
-  align-items: center;
-  width: 100%;
-  margin-left: 15px;
-  padding: 0 13px;
-  min-height: 45px;
+.select-program-owner__field-control {
+  outline: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 13px 40px 13px 14px;
+  border: 1px solid #cdcdcd;
+  width: 84%;
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: #ff8282;
+  }
 
   &:focus-within {
     border: 1px solid #444444;
   }
 
-  &:focus-within .select-program-owner__icon-email {
+  &:focus-within ~ .select-program-owner__icon-email {
     stroke: #68b738;
   }
 
-  &:focus-within .select-program-owner__icon-phone {
+  &:focus-within ~ .select-program-owner__icon-phone {
     fill: #68b738;
   }
 }
 
-.select-program-owner__field-control {
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  text-transform: uppercase;
-  font-family: inherit;
-  padding-right: 16px;
+.select-program-owner__field-control--contacts:invalid:not(:placeholder-shown) ~ .select-program-owner__icon-email {
+  stroke: #ff8282;
+}
+
+.select-program-owner__field-control--contacts:invalid:not(:placeholder-shown) ~ .select-program-owner__icon-phone {
+  fill: #ff8282;
+}
+
+.select-program-owner__field:last-child {
+  margin-bottom: 10px;
 }
 
 .select-program-owner__field-label {
   width: 24%;
+  text-transform: uppercase;
+}
+
+.select-program-owner__field-control--right {
+  margin-left: 11px;
 }
 
 @media (min-width: $tablet-width) {
   .select-program-owner {
-    margin-top: 65px;
+    margin-top: 32px;
     position: relative;
+  }
+
+  .select-program-owner::before {
+    top: 22px;
   }
 
   .select-program-owner__wrapper {
     font-size: 20px;
     line-height: 20px;
     width: 708px;
+    margin-bottom: 56px;
   }
 
   .select-program-owner__title {
@@ -111,32 +137,59 @@
     line-height: 36px;
     width: 594px;
     font-weight: 400;
-    padding-left: 30px;
-    margin-top: 0;
-    margin-left: calc((100% - 768px) / 2 + 40px);
+    padding-left: 38px;
+    margin-left: calc((100% - 768px) / 2 + 30px);
     margin-bottom: 77px;
     position: relative;
   }
 
   .select-program-owner__field {
     padding-left: $padding-tablet-form;
-    padding-right: $padding-tablet-form;
+    padding-right: 16px;
     margin-bottom: 20px;
   }
 
   .select-program-owner__field-control {
     height: 52px;
-    padding: 14px 20px 13px;
+    padding: 10px 54px 12px 19px;
     font-size: 20px;
     line-height: 30px;
+    margin-left: 2px;
+    width: 88%;
+  }
+
+  .select-program-owner__field-label {
+    width: 13%;
+  }
+
+  .select-program-owner__field-control--right {
+    margin-left: 15px;
+  }
+
+  .select-program-owner__icon-email {
+    right: 38px;
+    top: -1px;
+    position: relative;
+  }
+
+  .select-program-owner__icon-phone {
+    right: 38px;
+    top: 0;
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .select-program-owner {
+    margin-top: 24px;
+  }
+
   .select-program-owner__title {
-    padding-left: 30px;
-    margin-left: calc((100% - 1280px) / 2);
+    padding-left: 41px;
+    margin-left: calc((100% - 1280px) / 2 + -12px);
     position: relative;
+    margin-top: 0;
+    margin-bottom: 76px;
   }
 
   .select-program-owner__wrapper {
@@ -150,7 +203,41 @@
   }
 
   .select-program-owner__field {
-    width: 569px;
+    width: 588px;
     padding: 0;
+  }
+
+  .select-program-owner__field-control {
+    padding: 6px 51px 4px 18px;
+    margin-left: -21px;
+    transform: translateX(16px);
+  }
+
+  .select-program-owner__field-label {
+    padding: 3px 1px 5px 0;
+  }
+
+  .select-program-owner__icon-email {
+    top: 0;
+    left: -12px;
+  }
+
+  .select-program-owner__icon-phone {
+    top: 0;
+    right: 19px;
+  }
+
+  .select-program-owner__field:last-child {
+    margin-bottom: 19px;
+  }
+
+  .select-program-owner__field-label--right {
+    width: 23%;
+    padding-left: 17px;
+  }
+
+  .select-program-owner__field-control--width {
+    width: 83%;
+    transform: translateX(27px);
   }
 }
