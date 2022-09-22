@@ -1,13 +1,23 @@
 @use "../abstract" as *;
 
-.page-map,
+.page-map {
+  background-image: url("../img/page-map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .page-map iframe {
   width: 100%;
   height: 362px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-map,
+  .page-map {
+    background-image: url("../img/page-map-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .page-map iframe {
     height: 400px;
   }
@@ -16,5 +26,8 @@
 @media (min-width: $desktop-width) {
   .page-map {
     grid-area: map;
+    background-image: url("../img/page-map-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
