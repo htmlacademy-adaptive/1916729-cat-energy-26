@@ -12,13 +12,17 @@
   list-style-type: none;
 }
 
+.navigation__item:last-child {
+  border-bottom: 1px solid #dadada;
+}
+
 .navigation__link {
   font-family: $oswald;
   font-weight: 700;
   display: block;
   box-sizing: border-box;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
   min-height: 65px;
   font-size: 20px;
   line-height: 20px;
@@ -82,6 +86,7 @@
 
   .navigation__item:last-child {
     padding-left: 37px;
+    border: none;
   }
 
   .navigation__link-catalog {

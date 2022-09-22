@@ -1,9 +1,5 @@
 @use "../abstract" as *;
 
-.invitation-wrapper {
-  background: #f2f2f2;
-}
-
 .invitation {
   box-sizing: border-box;
   width: 320px;
@@ -11,15 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 26px 20px 26px;
-}
-
-.invitation-text {
   margin: 0 auto;
-}
-
-.invitation-text--dark {
-  background: #f2f2f2;
-  width: 100%;
 }
 
 .invitation__text__wrapper {
