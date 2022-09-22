@@ -74,15 +74,19 @@
   font-size: 16px;
   line-height: 18px;
   padding: 13px 40px 13px 14px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   width: 84%;
 
   &:invalid:not(:placeholder-shown) {
     border-color: #ff8282;
   }
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
   &:focus-within {
-    border: 1px solid #444444;
+    outline: 2px solid #444444;
   }
 
   &:focus-within ~ .select-program-owner__icon-email {

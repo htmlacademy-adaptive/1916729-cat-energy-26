@@ -28,8 +28,7 @@
 }
 
 .gift__text {
-  display: block;
-  margin-top: 53px;
+  margin-top: auto;
   font-family: $arial;
   font-weight: 400;
   font-size: 16px;
@@ -78,19 +77,21 @@
   }
 
   .gift__text {
-    margin-top: 75px;
-    padding-left: 0px;
+    margin-top: auto;
+    padding-left: 0;
     text-align: center;
+    margin-bottom: auto;
+    max-height: 180px;
   }
 }
 
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+@media (min-width: 768px) and (min-resolution: 1.5dppx), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .gift {
     background-image: url("../img/catalog-bgimage-tablet@2x.jpg");
   }
 }
 
-@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1280px) and (min-resolution: 144dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1280px) and (min-resolution: 1.5dppx), (min-width: 1280px) and (min-resolution: 144dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
   .gift {
     background-image: url("../img/catalog-bg-image-desktop@2x.jpg");
   }
