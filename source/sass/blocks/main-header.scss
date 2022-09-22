@@ -107,6 +107,15 @@
   display: none;
 }
 
+.main-header__navigation--nojs .navigation {
+  display: block;
+  margin-bottom: 199px;
+}
+
+.main-header__navigation--nojs .main-header__button {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-header {
     margin-top: 24px;

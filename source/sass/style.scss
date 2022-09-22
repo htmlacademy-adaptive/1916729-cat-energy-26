@@ -12,7 +12,7 @@
 @use "./blocks/example";
 @use "./blocks/comparsion";
 @use "./blocks/invitation";
-@use "./blocks/map";
+@use "./blocks/page-map";
 @use "./blocks/main-page";
 @use "./blocks/main-footer";
 @use "./blocks/main-catalog";
@@ -26,3 +26,4 @@
 @use "./blocks/program-filter";
 @use "./blocks/selection-form-comment";
 @use "./blocks/selection-form-optional";
+@use "./blocks/footer-social";
