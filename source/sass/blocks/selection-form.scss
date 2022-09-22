@@ -43,13 +43,16 @@
   flex-grow: 1;
   width: 50%;
 
-  &:invalid:not(:placeholder-shown) {
-    border-color: #ff8282;
+  &:focus {
+    outline: 2px solid #444444;
   }
 
-  &:focus {
-    border: 2px solid #444444;
-    outline: 0;
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: #ff8282;
   }
 }
 
