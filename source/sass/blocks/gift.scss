@@ -66,7 +66,7 @@
   .gift {
     background-image: url("../img/catalog-bg-image-desktop.jpg");
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     margin: 0;
     background-size: cover;
     padding: 42px;
@@ -81,7 +81,7 @@
     padding-left: 0;
     text-align: center;
     margin-bottom: auto;
-    max-height: 180px;
+    min-height: 180px;
   }
 }
 
